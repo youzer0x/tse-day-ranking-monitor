@@ -23,6 +23,7 @@
 3. **Stage2（Claude が変動要因をフル裏取り）**：`rows`（上位50社）各銘柄の `factor`/`factor_kind` を
    **[開示]（TDnet 前営業日15:30以降∪当日15:30未満）→[報道]（一次記事＋配信時刻を当日セッションに整合）→[テーマ]** の順で埋める。
    検索要約を出典にせず、材料未確認は正直に記す。個人発信は不使用。
+   - **証券会社のレーティング変更（投資判断・目標株価）も必ずカバーする**。TDnet には出ないため、`disclosures` が空なのに日中上昇した銘柄は **株探の銘柄ニュース `https://kabutan.jp/stock/news?code=<4桁>`（ブラウザ UA）の「レーティング日報」「材料」**を確認する。寄り前に出た格上げ・目標株価引き上げ（当日15:30より前に伝わったもの）は日中上昇の有力材料。証券会社名・旧→新の投資判断/目標株価を具体的に記し、区分は `[報道]`。
 4. **Publish**：`publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --send`
    - `docs/data/<date>.json` 保存（ランキング＋要因）／`docs/data/manifest.json` 更新／30日より古い JSON を削除。
    - `docs/index.html`（日付選択式 Pages）を更新。
