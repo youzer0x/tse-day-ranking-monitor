@@ -74,7 +74,7 @@ def build(session_iso, prev_iso, min_pct=5.0, min_turnover=10_000_000, min_mcap=
     qualifying, dropped_turnover, dropped_mcap = [], [], []
     for c5, b, m, pct in cand:
         c4 = jquants.code4(c5)
-        name = m.get("CoName")
+        name = jquants.normalize_company_name(m.get("CoName"))
         va = b.get("Va")
         if va is None or va < min_turnover:
             dropped_turnover.append({"code": c4, "name": name, "pct": round(pct, 2),

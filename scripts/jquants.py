@@ -67,6 +67,31 @@ def code4(code5):
     return c
 
 
+def normalize_company_name(name):
+    """表示用に社名を整える。
+
+    - J-Quants の CoName はフルネームで返る（例：村田製作所／ソフトバンクグループ）が、
+      英数字・記号は**全角**のことがある（例：ＡＧＣ／ＫＤＤＩ／日本Ｍ＆Ａセンター…）。
+    - 仕様：英数記号は**半角**に統一し、万一含まれる「株式会社」表記は除去する
+      （CoName は通常含まないが安全側）。日本語（かな・カナ・漢字）はそのまま。
+    """
+    if not name:
+        return name
+    out = []
+    for ch in name:
+        o = ord(ch)
+        if 0xFF01 <= o <= 0xFF5E:      # 全角の英数字・記号 → 半角（! 〜 ~）
+            out.append(chr(o - 0xFEE0))
+        elif o == 0x3000:               # 全角スペース → 半角スペース
+            out.append(" ")
+        else:
+            out.append(ch)
+    s = "".join(out)
+    for token in ("株式会社", "（株）", "(株)", "㈱"):
+        s = s.replace(token, "")
+    return s.strip()
+
+
 def master_by_date(target_iso):
     return {r["Code"]: r for r in get("/equities/master", {"date": target_iso})}
 
