@@ -127,12 +127,12 @@ git push -u origin main
    - **リポジトリ**：`tse-day-ranking-monitor`
    - **環境**：Step 7 の `tse-day-ranking-monitor`
    - **モデル**：**Sonnet 4.6**／**effort**：**max**
-   - **スケジュール（cron）**：毎日 **18:30 JST**（タイムゾーン欄があれば Asia/Tokyo で `30 18 * * *`。UTC 指定なら `30 9 * * *` ＝ 09:30 UTC）
+   - **スケジュール（cron）**：毎日 **18:10 JST**（タイムゾーン欄があれば Asia/Tokyo で `10 18 * * *`。UTC 指定なら `10 9 * * *` ＝ 09:10 UTC）
    - **プロンプト**：`ROUTINE_PROMPT.md` の```で囲んだ本文をそのまま貼り付け。
 3. **Permissions タブ（フォーム最下部・リポジトリ追加後に出る）で「Allow unrestricted branch pushes」を ON**。これが無いとクラウドが `claude/` ブランチにしか push できず、Pages（main/docs）に反映されない。
 4. 保存。
 
-> **18:30 JST の根拠**：J-Quants は当日の四本値を約16:30、銘柄マスタ（市場区分）を約17:30、財務速報を約18:00 に反映する。マスタ反映後に余裕をもって起動する（PTS 版は前営業日ゲート・朝06:06 で対象セッションが異なる）。
+> **18:10 JST の根拠**：J-Quants は当日の四本値を約16:30、銘柄マスタ（市場区分）を約17:30、財務速報を約18:00 に反映する。マスタ反映後に余裕をもって起動する（PTS 版は前営業日ゲート・朝06:06 で対象セッションが異なる）。
 
 ## Step 9：初回テスト
 
@@ -143,7 +143,7 @@ git push -u origin main
    - メール：`NOTIFY_TO` 宛に「[東証日中ランキング] YYYY-MM-DD｜…社該当（・上位50社）」が届く。
    - リポジトリ：`docs/data/` に新しい `YYYY-MM-DD.json`（`count_total`／`count`／`capped` 入り）が追加され、**main** に push されている。
 
-以上で日次自動が稼働する。以後 毎日 18:30 JST に自動生成（休場日はスキップ）。
+以上で日次自動が稼働する。以後 毎日 18:10 JST に自動生成（休場日はスキップ）。
 
 ---
 
@@ -163,7 +163,7 @@ python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$P
 | 症状 | 対処 |
 |------|------|
 | 時価総額が「—」 | `JQUANTS_API_KEY` 未設定／Light 未満（Free は当日値なし）。新規上場は Yahoo 側も失敗時に発生 |
-| 当日データが空 | 18:30 より前に実行していないか（四本値16:30・マスタ17:30 反映後に起動）。休場日でないか（`check_gate.py` が `SKIP`） |
+| 当日データが空 | 18:10 より前に実行していないか（四本値16:30・マスタ17:30 反映後に起動）。休場日でないか（`check_gate.py` が `SKIP`） |
 | メール不達 | Gmail API の3変数（CLIENT_ID/SECRET/REFRESH_TOKEN）と `GMAIL_ADDRESS` を確認。**OAuth 同意画面を本番公開**したか（テストだと7日で失効） |
 | Pages が `claude/...` に出て未反映 | ルーチンの「Allow unrestricted branch pushes」ON＋プロンプトの `git push origin HEAD:main` を確認 |
 | Pages 未表示 | Settings → Pages の Branch=main / Folder=/docs を確認 |

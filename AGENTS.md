@@ -10,7 +10,7 @@
 
 ## 起動とゲート
 
-- **cron：当日 18:30 JST**（J-Quants が当日の四本値 16:30・銘柄マスタ 17:30・財務速報 18:00 を反映済み。`reference-jquants-data-update-timing`）。
+- **cron：当日 18:10 JST**（J-Quants が当日の四本値 16:30・銘柄マスタ 17:30・財務速報 18:00 を反映済み。`reference-jquants-data-update-timing`）。
 - **営業日ゲート**：`business_day.is_business_day(today)` が真のときのみ実行（休場日はスキップ）。
 - 使用モデル：Sonnet 4.6・effort=max（PTS ルーチンに合わせる）。
 
