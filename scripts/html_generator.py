@@ -1,4 +1,4 @@
-"""GitHub Pages 用 HTML と Gmail 本文 HTML の生成（東証 日中 値上がり率ランキング）。
+"""GitHub Pages 用 HTML と Gmail 本文 HTML の生成（東証 値上がり率ランキング）。
 
 トンマナ・書式・カラーは PTS 版（pts-ranking-monitor/scripts/html_generator.py）と**同一**。
 TSE 固有のデータ（列＝PTS気配なし・終値(円)／抽出条件＝≥+5%・¥10M・100億・上位50社／出典）
@@ -80,7 +80,7 @@ def generate_email_html(data, pages_url, max_items=25):
 <body style="font-family:'Helvetica Neue',Arial,'Hiragino Sans',sans-serif;color:#333;margin:0;padding:0;background:#f5f5f5;">
   <div style="max-width:980px;margin:20px auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
     <div style="background:#11243f;color:#fff;padding:18px 22px;">
-      <h1 style="margin:0;font-size:19px;font-weight:600;">📈 東証 日中 値上がり率ランキング</h1>
+      <h1 style="margin:0;font-size:19px;font-weight:600;">📈 東証 値上がり率ランキング</h1>
       <p style="margin:6px 0 0;font-size:13px;opacity:0.9;">{date_str}｜{count_label}｜{win}</p>
       <p style="margin:4px 0 0;font-size:11px;opacity:0.7;">条件：{_criteria_text(data)}</p>
     </div>
@@ -103,7 +103,7 @@ def generate_email_html(data, pages_url, max_items=25):
       </table>
       <p style="margin:14px 0 0;font-size:11px;color:#888;">価格・売買代金・終値・市場区分・時価総額＝J-Quants V2（新規上場の時価総額は Yahoo Finance JP）／開示＝TDnet。† は増資・自己株で株探最新株数と乖離。本情報は参考であり投資助言ではない。</p>
     </div>
-    <div style="background:#f6f8fa;padding:11px 20px;font-size:11px;color:#999;text-align:center;">東証 日中ランキング・モニター｜Claude 定期実行（自動送信）</div>
+    <div style="background:#f6f8fa;padding:11px 20px;font-size:11px;color:#999;text-align:center;">東証 値上がりランキング・モニター｜Claude 定期実行（自動送信）</div>
   </div>
 </body></html>"""
 
@@ -116,7 +116,7 @@ def generate_pages_html():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>東証 日中 値上がり率ランキング</title>
+<title>東証 値上がり率ランキング</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#eef1f5;--card:#fff;--primary:#11243f;--accent:#c0392b;--text:#222;--sub:#6b7785;--border:#e2e6ea;--hover:#f5f8ff;}
@@ -177,7 +177,7 @@ tbody tr:hover td{background:var(--hover);}
 </style></head>
 <body>
 <div class="header"><div class="header-inner">
-  <div><h1>📈 東証 日中 値上がり率ランキング</h1></div>
+  <div><h1>📈 東証 値上がり率ランキング</h1></div>
   <div class="date-selector"><label for="dateSelect">セッション日:</label>
   <select id="dateSelect" onchange="loadDate(this.value)"><option>読み込み中...</option></select></div>
 </div></div>
@@ -189,13 +189,14 @@ tbody tr:hover td{background:var(--hover);}
   </div>
 <div class="container" style="margin-top:0;"><div id="droppedArea"></div></div>
 </div>
-<div class="footer">東証 日中ランキング・モニター｜Claude 定期実行で自動生成｜価格・売買代金・終値・時価総額＝J-Quants V2／開示＝TDnet｜本情報は参考であり投資助言ではない</div>
+<div class="footer">東証 値上がりランキング・モニター｜Claude 定期実行で自動生成｜価格・売買代金・終値・時価総額＝J-Quants V2／開示＝TDnet｜本情報は参考であり投資助言ではない</div>
 <script>
 let data=null;
 function fmtMcap(o,f){if(o==null)return '—';return o.toLocaleString('ja-JP')+(f||'');}
 function fmtPct(p){return p==null?'—':'+'+Number(p).toFixed(2)+'%';}
 function fmtNum(x){return x==null?'—':Number(x).toLocaleString('ja-JP');}
 function fmtTurnover(t){return t==null?'—':Math.round(Number(t)).toLocaleString('ja-JP');}
+function fmtTurnoverOku(r){let v=(r.turnover_yen!=null)?Number(r.turnover_yen)/1e8:(r.turnover_m!=null?Number(r.turnover_m)/100:null);return v==null?'—':Math.round(v).toLocaleString('ja-JP');}
 function fmtMarket(m){m=m||'';if(m.indexOf('プライム')>=0)return 'Prime';if(m.indexOf('スタンダード')>=0)return 'Standard';if(m.indexOf('グロース')>=0)return 'Growth';return m;}
 function esc(s){const d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML;}
 function kindBadge(k){k=(k||'').replace(/[\[\]]/g,'');if(!k)return '';return '<span class="kind k'+k+'">'+k+'</span>';}
@@ -229,7 +230,7 @@ function render(){
   const c=data.criteria||{};
   document.getElementById('note').textContent=
     '抽出条件：値上がり率≥+'+(c.min_pct??5)+'% かつ 売買代金≥'+((c.min_turnover_yen??1e7)/1e6)+'百万円／東証個別株のみ・時価総額≥'+(c.min_mcap_oku??100)+'億円'+(c.max_rank?'・上昇率上位'+c.max_rank+'社':'')+'。時価総額は当日終値×発行済株式数（億円・四捨五入）。† は増資・自己株で株探最新株数と>1%乖離。';
-  let h='<table><thead><tr><th class="r">#</th><th>コード</th><th>銘柄</th><th>市場</th><th class="r">時価総額<br>(億円)</th><th class="r">上昇率</th><th class="r">終値<br>(円)</th><th class="r">売買代金<br>(百万円)</th><th>変動要因</th></tr></thead><tbody>';
+  let h='<table><thead><tr><th class="r">#</th><th>コード</th><th>銘柄</th><th>市場</th><th class="r">時価総額<br>(億円)</th><th class="r">上昇率</th><th class="r">終値<br>(円)</th><th class="r">売買代金<br>(億円)</th><th>変動要因</th></tr></thead><tbody>';
   rows.forEach(r=>{
     let factor=esc(r.factor||'（材料未確認）');
     const fk=(r.factor_kind||'').replace(/[\[\]]/g,'');
@@ -242,7 +243,7 @@ function render(){
       '<td class="num" data-label="時価総額(億円)">'+fmtMcap(r.mcap_oku,r.mcap_flag)+'</td>'+
       '<td class="pct" data-label="上昇率">'+fmtPct(r.pct)+'</td>'+
       '<td class="num" data-label="終値(円)">'+fmtNum(r.close)+'</td>'+
-      '<td class="num" data-label="売買代金(百万円)">'+fmtTurnover(r.turnover_m)+'</td>'+
+      '<td class="num" data-label="売買代金(億円)">'+fmtTurnoverOku(r)+'</td>'+
       '<td class="factor">'+kindBadge(r.factor_kind)+factor+'</td>'+
     '</tr>';
   });

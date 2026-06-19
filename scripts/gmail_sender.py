@@ -1,4 +1,4 @@
-"""Gmail 送信（東証 日中ランキング通知）。Gmail API（HTTPS）方式。
+"""Gmail 送信（東証 値上がり率ランキング通知）。Gmail API（HTTPS）方式。
 
 クラウド環境（claude.ai ルーチン）は HTTP/HTTPS プロキシ経由のため SMTP(465) は
 通らない。代わりに OAuth2 リフレッシュトークンでアクセストークンを取得し、Gmail API
@@ -57,8 +57,8 @@ def _access_token():
 
 def _subject(session_date, count, total=None, capped=False):
     if capped and total is not None:
-        return f"[東証日中ランキング] {session_date}｜{total}社該当・上位{count}社"
-    return f"[東証日中ランキング] {session_date}｜{count}社該当"
+        return f"[東証値上がり率ランキング] {session_date}｜{total}社該当・上位{count}社"
+    return f"[東証値上がり率ランキング] {session_date}｜{count}社該当"
 
 
 def _build_raw(sender, recipient, subject, session_date, count, total, capped, html_body):
@@ -69,7 +69,7 @@ def _build_raw(sender, recipient, subject, session_date, count, total, capped, h
     cnt_txt = (f"{total}社該当（上位{count}社を掲載）" if (capped and total is not None)
                else f"{count}社該当")
     msg.attach(MIMEText(
-        f"{session_date} の東証 日中（レギュラー）値上がりランキング"
+        f"{session_date} の東証 値上がり率ランキング"
         f"（{cnt_txt}）です。HTML 表示に対応したメーラーでご覧ください。", "plain", "utf-8"))
     msg.attach(MIMEText(html_body, "html", "utf-8"))
     return base64.urlsafe_b64encode(msg.as_bytes()).decode()
