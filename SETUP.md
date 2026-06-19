@@ -12,7 +12,7 @@
 
 ## Step 0：スクリプトを揃える（リポに同梱されていない Stage1 一式をコピー）
 
-本ディレクトリには `scripts/publish.py`・`scripts/gmail_sender.py`・`scripts/get_gmail_token.py`・`scripts/check_gate.py` が同梱済み。**Stage1 のパイプライン一式をスキルからコピー**する：
+本ディレクトリには `scripts/publish.py`・`scripts/html_generator.py`・`scripts/gmail_sender.py`・`scripts/get_gmail_token.py`・`scripts/check_gate.py` が同梱済み（Web/メールの体裁は `html_generator.py`＝PTS 版と同一トンマナ）。**Stage1 のパイプライン一式をスキルからコピー**する：
 
 ```bash
 cd /c/Users/YujiroOkawa/project-private/news-financial-market/automation/tse-day-ranking-monitor
@@ -29,7 +29,8 @@ tse-day-ranking-monitor/
 │   ├── jquants.py / tdnet.py / business_day.py / kabutan_pts.py
 │   ├── market_cap_jquants.py / market_cap_yahoo.py
 │   ├── check_gate.py         # 営業日ゲート（SESSION=日付 / SKIP を出力）
-│   ├── publish.py            # Pages JSON/SPA ＋ メール HTML 生成・送信
+│   ├── publish.py            # フルデータ保存・manifest・index 書出し・送信の取りまとめ
+│   ├── html_generator.py     # Pages SPA／メール HTML 生成（PTS と同一トンマナ・配色）
 │   ├── gmail_sender.py       # Gmail API（HTTPS）送信（PTS と同方式）
 │   └── get_gmail_token.py    # ローカル1回：リフレッシュトークン取得
 ├── docs/                     # GitHub Pages（index.html・data/ は publish.py が生成）
