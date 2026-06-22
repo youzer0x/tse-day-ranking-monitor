@@ -28,9 +28,10 @@
 3. **Stage2（変動要因の充填）**：`rows`（上位50社）各銘柄の `factor`/`factor_kind` を
    **[開示]（TDnet 前営業日15:30以降∪当日15:30未満）→[報道]（一次記事＋配信時刻を当日セッションに整合）→[テーマ]** の順で埋める。
    検索要約を出典にせず、材料未確認は正直に記す。
-   - **`TSE_USE_GROK=1` のとき（手順B'）**：Stage2.5 の `docs/tmp/research/<code>-<name>-<date>.md` の **DIGEST_BLOCK** を
-     `code`×`session_date` で取り込み、**3層ソース方針で再検証**（`sources_used`=採用／`sources_new_candidate`=ルーブリック再評価のうえ採用＋whitelist 昇格候補に記録／`sources_excluded`=不採用）し、`window_ok`/`trigger_time` の厳密窓整合を確認のうえ `factor`/`factor_kind` に転記する。
-     **DIGEST_BLOCK 欠落・検証落ち・窓不整合の行は従来の Claude 裏取りに fallback**。検証合格率が掲載行の半数未満なら grok を捨てて全行 Claude。
+   - **`TSE_USE_GROK=1` のとき（手順B'）**：Stage2.5 の `docs/tmp/research/<code>-<name>-<date>.md` を `code`×`session_date` で取り込む。
+     **研究本文を主入力**とし（DIGEST_BLOCK は索引・要約で単独依存しない＝当日ドライバーを取りこぼす）、取り込み時に **(a) ランディングページ出典の全削除（Yahoo `/quote`・日経会社ページ・株探銘柄トップ等）・(b) 数値を J-Quants/一次開示で再検証・(c) 窓外材料は「背景」に格下げ** を行い、
+     **3層ソース再検証**（`sources_used`=採用／`sources_new_candidate`=ルーブリック再評価のうえ採用＋whitelist 昇格候補に記録／`sources_excluded`=不採用）＋`window_ok`/`trigger_time` の厳密窓整合を確認して `factor`/`factor_kind` を起こす（**発見は grok・判定は Claude**）。
+     **研究ファイル欠落・検証落ち・窓不整合の行は従来の Claude 裏取りに fallback**。検証合格率が掲載行の半数未満なら grok を捨てて全行 Claude。
    - **ソース規律（3層方針）**：①中核 whitelist は採用、②良質な非whitelist（フィスコ・みんかぶ編集記事等）はルーブリック合格なら採用、③個人発信・匿名・純アルゴ生成は不使用（`reference/sources.md §4`）。
    - **証券会社のレーティング変更（投資判断・目標株価）も必ずカバーする**。TDnet には出ないため、`disclosures` が空なのに日中上昇した銘柄は **株探の銘柄ニュース `https://kabutan.jp/stock/news?code=<4桁>`（ブラウザ UA）の「レーティング日報」「材料」**を確認する。寄り前に出た格上げ・目標株価引き上げ（当日15:30より前に伝わったもの）は日中上昇の有力材料。証券会社名・旧→新の投資判断/目標株価を具体的に記し、区分は `[報道]`。
 4. **Publish**：`publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --send`

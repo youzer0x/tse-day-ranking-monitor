@@ -1,5 +1,8 @@
-"""自動版（schedule 統合）: 各銘柄の変動要因を xAI Grok API でリサーチし、DIGEST_BLOCK 付き
-研究ファイルを生成する。Claude は後段（手順B'）で DIGEST_BLOCK を取り込み factor/factor_kind を埋める。
+"""自動版（schedule 統合）: 各銘柄の変動要因を xAI Grok API でリサーチし、リサーチ本文＋末尾
+DIGEST_BLOCK の研究ファイル（grok レスポンス全文）を生成する。Claude は後段（手順B'）でこの
+**本文を主入力**として読み（DIGEST_BLOCK は索引／構造化サマリで単独依存しない＝当日ドライバーを
+取りこぼす）、ランディングページ出典の削除・数値の一次再検証・窓外材料の背景格下げを経て
+factor/factor_kind を起こす（発見は grok・判定と出典規律は Claude）。
 
 - クラウドルーチンは**ローカルの grok build CLI に到達できない**ため、自動版は xAI Grok API を使う。
 - プロンプトは `../grok/grok_research_prompt.md` の共有雛形（対話版 grok build と同一）。{{ }} を行データで置換。
