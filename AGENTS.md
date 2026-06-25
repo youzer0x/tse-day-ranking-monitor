@@ -34,15 +34,22 @@
      **研究ファイル欠落・検証落ち・窓不整合の行は従来の Claude 裏取りに fallback**。検証合格率が掲載行の半数未満なら grok を捨てて全行 Claude。
    - **ソース規律（3層方針）**：①中核 whitelist は採用、②良質な非whitelist（フィスコ・みんかぶ編集記事等）はルーブリック合格なら採用、③個人発信・匿名・純アルゴ生成は不使用（`reference/sources.md §4`）。
    - **証券会社のレーティング変更（投資判断・目標株価）も必ずカバーする**。TDnet には出ないため、`disclosures` が空なのに日中上昇した銘柄は **株探の銘柄ニュース `https://kabutan.jp/stock/news?code=<4桁>`（ブラウザ UA）の「レーティング日報」「材料」**を確認する。寄り前に出た格上げ・目標株価引き上げ（当日15:30より前に伝わったもの）は日中上昇の有力材料。証券会社名・旧→新の投資判断/目標株価を具体的に記し、区分は `[報道]`。
-4. **Publish**：`publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --send`
+4. **Publish（生成のみ・メールは送らない）**：`publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL"`
    - `docs/data/<date>.json` 保存（ランキング＋要因）／`docs/data/manifest.json` 更新／30日より古い JSON を削除。
    - `docs/index.html`（日付選択式 Pages）を更新（体裁は `html_generator.py`＝PTS 版と同一トンマナ・配色）。保存 JSON は rows に開示（pdf_url）を含むフルデータ。
-   - メール HTML を生成し、`--send` で **Gmail API（HTTPS）送信**（`gmail_sender.send_gmail`）。
+   - メール HTML を生成・保存する**が、この段階では送信しない**（`--send` は付けない。送信は step6）。
+5. **デプロイ（必ず main へ）**：`docs/index.html` と `docs/data/` を commit し、`git push origin HEAD:main`。
+   GitHub Pages は **main/docs** を配信するため、クラウドが `claude/` ブランチ上にいても **main へ直接 push**する（PR は作らない。リポジトリは unrestricted branch push 許可）。`docs/tmp/` はコミットしない。
+6. **メール通知（Pages 反映後に送信）**：`publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --notify`
+   - **GitHub Pages が当日 SESSION を実際に配信し始める**（`data/manifest.json` の最新日付＝SESSION になる）まで
+     キャッシュ無効化付きで**最大5分ポーリング**し、確認後にメール HTML を **Gmail API（HTTPS）送信**（`gmail_sender.send_gmail`）。
      クラウド環境は SMTP(465) を通さないため **PTS 版と同じ Gmail API 方式**を用いる。必要な環境変数は
      `GMAIL_CLIENT_ID`／`GMAIL_CLIENT_SECRET`／`GMAIL_REFRESH_TOKEN`／`GMAIL_ADDRESS`／`NOTIFY_TO`
      （リフレッシュトークンは `scripts/get_gmail_token.py` でローカル1回取得。SETUP.md 参照）。
-5. **デプロイ（必ず main へ）**：`docs/index.html` と `docs/data/` を commit し、`git push origin HEAD:main`。
-   GitHub Pages は **main/docs** を配信するため、クラウドが `claude/` ブランチ上にいても **main へ直接 push**する（PR は作らない。リポジトリは unrestricted branch push 許可）。`docs/tmp/` はコミットしない。
+   - **必ず step5 の push の後**に実行する。push 前にメールを送ると、読者がリンクを開いた時点で Pages が
+     まだ前コミット（最新日付＝前営業日）を返し、当日分が見えない（=メールのリンク先ラグ）。`--notify` はその窓を閉じる。
+   - ライブ確認の取得先は Pages ホスト（`*.github.io`）。ルーチンのカスタム環境の**ネット許可に `*.github.io` を含める**こと
+     （未許可だと毎回失敗→5分後に送信＝従来同様ラグが残る）。`--notify` は生成・コミットを行わない（step4/5 済み前提）。
 
 ## レポート（任意）
 

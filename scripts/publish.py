@@ -10,10 +10,21 @@
 トンマナ・書式・カラーは PTS 版（pts-ranking-monitor）と同一（html_generator.py 参照）。
 メール送信は PTS と同じ Gmail API 方式（クラウドは SMTP 不可）。本体は stdlib のみ。
 
+2フェーズ運用（メールのリンク先が「前営業日」止まりになるラグ対策）：
+  1) 生成（build）：`python publish.py --in ranking.json --docs docs --pages-url URL`
+      … docs/ 一式を生成するだけ（メールは送らない）。
+  2) この後に git push（GitHub Pages＝main/docs を反映）。
+  3) 通知（notify）：`python publish.py --in ranking.json --docs docs --pages-url URL --notify`
+     … Pages が新セッションを実際に配信し始めるまで待ってから Gmail 送信する。
+  ※ `--send`（即時送信）は push 前送信になりラグの原因になるため**レガシー**。ルーチンでは使わない。
+
 usage:
-  python publish.py --in ranking.json --docs ../docs [--pages-url URL] [--send]
+  python publish.py --in ranking.json --docs docs --pages-url URL            # 生成のみ
+  python publish.py --in ranking.json --docs docs --pages-url URL --notify   # push 後にライブ確認→送信
+  python publish.py --in ranking.json --docs docs --pages-url URL --send     # レガシー（即時送信・非推奨）
 """
-import os, sys, json, glob, argparse
+import os, sys, json, glob, argparse, time
+import urllib.request, urllib.error
 from datetime import date, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -89,12 +100,53 @@ def send_email(data, html_body):
         total=counts.get("qualifying", len(rows)), capped=bool(data.get("capped")))
 
 
+def wait_until_live(pages_url, session, timeout=300, interval=10):
+    """push 後、GitHub Pages が新セッションを配信し始めるまで待つ（メールのリンク先ラグ対策）。
+
+    Pages の `data/manifest.json` をキャッシュ無効化クエリ（?cb=<epoch>）＋no-cache ヘッダで
+    取得し、`dates[0]==session` になったら True を返す（＝SPA が当日分を最新として表示できる状態）。
+    pages_url 未設定（"./"）はスキップして False。timeout 内に確認できなければ警告を出して False を
+    返すが、**送信は呼び出し側で続行**する（遅れてでも通知する方がよい）。本体は stdlib のみ。
+    """
+    if not pages_url or pages_url in ("./", "."):
+        print("  (skip live-check: pages-url 未設定)")
+        return False
+    base = pages_url.rstrip("/")
+    deadline = time.monotonic() + timeout
+    n = 0
+    while time.monotonic() < deadline:
+        n += 1
+        url = f"{base}/data/manifest.json?cb={int(time.time())}"
+        try:
+            req = urllib.request.Request(url, headers={
+                "Cache-Control": "no-cache", "Pragma": "no-cache",
+                "User-Agent": "tse-ranking-monitor-livecheck"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                dates = json.loads(r.read()).get("dates", [])
+            if dates and dates[0] == session:
+                print(f"  live confirmed: Pages newest={session} (checks={n})")
+                return True
+            print(f"  not live yet (newest={dates[0] if dates else None}); wait {interval}s")
+        except urllib.error.HTTPError as e:
+            print(f"  live-check HTTP {e.code}; wait {interval}s")
+        except Exception as e:
+            print(f"  live-check {type(e).__name__}: {e}; wait {interval}s")
+        time.sleep(interval)
+    print(f"  WARN: Pages not confirmed live within {timeout}s; sending anyway")
+    return False
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--in", dest="inp", required=True, help="build_day_ranking.py の出力 JSON（要因記入済み）")
     ap.add_argument("--docs", default="docs", help="GitHub Pages の docs ディレクトリ")
     ap.add_argument("--pages-url", default=os.environ.get("PAGES_URL", "./"))
-    ap.add_argument("--send", action="store_true", help="Gmail 送信（環境変数が揃っていれば）")
+    ap.add_argument("--notify", action="store_true",
+                    help="push 後に Pages のライブ反映を待ってから Gmail 送信（生成はしない）。ルーチン推奨")
+    ap.add_argument("--send", action="store_true",
+                    help="レガシー：生成と同時に即 Gmail 送信（push 前送信になりラグの原因。非推奨）")
+    ap.add_argument("--live-timeout", type=int, default=300, help="--notify のライブ確認の最大待機秒（既定300）")
+    ap.add_argument("--live-interval", type=int, default=10, help="--notify のライブ確認の間隔秒（既定10）")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -102,6 +154,16 @@ def main():
         data = json.load(f)
     if "session_date" not in data:
         sys.exit("invalid ranking json: missing session_date")
+
+    if args.notify:
+        # 通知フェーズ：生成・コミットは済んでいる前提。push 後の Pages 反映を待って送信する。
+        print(f"Notify {data['session_date']} ({len(data.get('rows', []))} rows): wait for Pages then send ...")
+        wait_until_live(args.pages_url, data["session_date"],
+                        timeout=args.live_timeout, interval=args.live_interval)
+        email_html = html_generator.generate_email_html(data, args.pages_url)
+        send_email(data, email_html)
+        return
+
     print(f"Publishing {data['session_date']} ({len(data.get('rows', []))} rows) ...")
 
     save_data(data, args.docs)
@@ -116,6 +178,8 @@ def main():
     print(f"  email html: {email_path}")
 
     if args.send:
+        # レガシー経路（push 前送信＝リンク先が未反映になりやすい）。ルーチンは --notify を使う。
+        print("  WARN: --send は push 前送信のためリンク先ラグの原因。ルーチンでは push 後に --notify を使う。")
         send_email(data, email_html)
 
 

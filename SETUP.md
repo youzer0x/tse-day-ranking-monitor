@@ -124,8 +124,9 @@ git push -u origin main
      ```
 3. **ネットワーク許可（Network access）**：既定 `Trusted` だと外部サイトが `403` になる。次のどちらか：
    - **おすすめ＝`Full`**：すべて許可（記事取得が確実）。
-   - **`Custom`**：「Allowed domains」に `api.jquants.com`／`www.release.tdnet.info`／`finance.yahoo.co.jp`／`kabutan.jp`／報道各社（`nikkei.com`・`asia.nikkei.com`・`reuters.com`・`bloomberg.com`・`wsj.com`・`ft.com`・`cnbc.com`・`jiji.com`・`kyodonews.jp`・`toyokeizai.net`・`diamond.jp` 等）を1行ずつ。**grok 委譲を使う場合は `api.x.ai` を追加**。**「Also include default list of common package managers」に必ずチェック**（pip と Gmail API `*.googleapis.com` のため）。
+   - **`Custom`**：「Allowed domains」に `api.jquants.com`／`www.release.tdnet.info`／`finance.yahoo.co.jp`／`kabutan.jp`／**`<あなた>.github.io`（または `github.io`）**／報道各社（`nikkei.com`・`asia.nikkei.com`・`reuters.com`・`bloomberg.com`・`wsj.com`・`ft.com`・`cnbc.com`・`jiji.com`・`kyodonews.jp`・`toyokeizai.net`・`diamond.jp` 等）を1行ずつ。**grok 委譲を使う場合は `api.x.ai` を追加**。**「Also include default list of common package managers」に必ずチェック**（pip と Gmail API `*.googleapis.com` のため）。
    - Gmail API の `gmail.googleapis.com`・`oauth2.googleapis.com` は既定の `*.googleapis.com` に含まれ**追加不要**。
+   - **`github.io` は publish の `--notify`（メール前の Pages ライブ確認）で必要**。未許可だと毎回ライブ確認に失敗し、5分のタイムアウト後に送信する（＝従来どおりメールは届くがリンク先ラグが残る）。`Full` なら追加不要。
 4. **セットアップ・スクリプト（Setup script）**：クラウドの setup はリポジトリ外で走るため `-r requirements.txt` は使えない。パッケージ名を直接、PEP668 フォールバック付きで（クォートや `>=` は貼付で化けるので使わない）：
    ```bash
    pip install requests beautifulsoup4 lxml jpholiday || pip install --break-system-packages requests beautifulsoup4 lxml jpholiday
@@ -166,8 +167,10 @@ cd /c/Users/YujiroOkawa/project-private/news-financial-market/automation/tse-ran
 python scripts/check_gate.py                                   # SESSION=YYYY-MM-DD / SKIP
 python scripts/build_day_ranking.py --date YYYY-MM-DD --out docs/tmp/ranking.json
 # （必要なら docs/tmp/ranking.json の各 row の factor/factor_kind を編集）
-python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL"        # 送信なし
-python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --send  # Gmail 送信あり
+python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL"          # 生成のみ（送信しない）
+git add docs/index.html docs/data && git commit -m "Update TSE ..." && git push origin HEAD:main   # Pages へ反映
+python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --notify  # push 後: Pages 反映を待って Gmail 送信（推奨）
+# python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$PAGES_URL" --send  # レガシー（即時送信・push 前送信になるため非推奨）
 ```
 
 ## トラブルシューティング
@@ -177,6 +180,7 @@ python scripts/publish.py --in docs/tmp/ranking.json --docs docs --pages-url "$P
 | 時価総額が「—」 | `JQUANTS_API_KEY` 未設定／Light 未満（Free は当日値なし）。新規上場は Yahoo 側も失敗時に発生 |
 | 当日データが空 | 18:10 より前に実行していないか（四本値16:30・マスタ17:30 反映後に起動）。休場日でないか（`check_gate.py` が `SKIP`） |
 | メール不達 | Gmail API の3変数（CLIENT_ID/SECRET/REFRESH_TOKEN）と `GMAIL_ADDRESS` を確認。**OAuth 同意画面を本番公開**したか（テストだと7日で失効） |
+| メールのリンク先が前営業日のまま | `--notify`（step6）を**必ず push の後**に実行しているか／ネット許可に `github.io` が入っているか確認。`--notify` が Pages 反映を待ってから送る。旧 `--send`（push 前送信）を使っていないか |
 | Pages が `claude/...` に出て未反映 | ルーチンの「Allow unrestricted branch pushes」ON＋プロンプトの `git push origin HEAD:main` を確認 |
 | Pages 未表示 | Settings → Pages の Branch=main / Folder=/docs を確認 |
 | pip が `externally-managed` で失敗 | setup script のフォールバック `|| pip install --break-system-packages ...` が入っているか |
