@@ -26,8 +26,57 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import jquants, kabutan_pts, tdnet, business_day, market_cap_jquants as mcap
 
 
+def annotate_sector_clusters(rows, min_cluster=2):
+    """同一 S33（33業種）で当日ともに上昇した銘柄群を機械的に束ね、各行に
+    `sector_cluster`（同業種 co-mover ＋ leader 候補）を付す。leader は
+    クラスタ内で具体的 TDnet 開示を持つ銘柄を優先（複数なら売買代金最大）、
+    開示が無ければ売買代金最大とし、`leader_basis`（"disclosure"/"turnover"）で
+    どちらかを明示する。決定的・ネットワーク呼び出し無し（rows は rank/disclosures
+    付与後に渡すこと）。
+
+    狙い：「孤立した謎の上昇」ではなく同業種が束で動いた銘柄を surface し、後段の
+    変動要因リサーチ（手順B 2.5）が leader への連鎖として帰属できるようにする。
+    注意：S33 は**同業種内のみ**を束ねる。業種をまたぐテーマ（例：光部品＝非鉄金属
+    〔電線〕＋電気機器〔光部品〕＋精密機器）は本関数では結びつけない。横断的な
+    テーマ結合は方法論側（手順B 2.5・theme_clusters の各 leader と地合い）で人手で行う。
+
+    戻り値：size>=min_cluster のクラスタ要約リスト（theme_clusters）。
+    """
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for r in rows:
+        if r.get("sec33"):
+            groups[r["sec33"]].append(r)
+    summary = []
+    for s33, members in groups.items():
+        if len(members) < min_cluster:
+            continue
+        disc = [m for m in members if m.get("disclosures")]
+        leader = (max(disc, key=lambda m: m["turnover_yen"]) if disc
+                  else max(members, key=lambda m: m["turnover_yen"]))
+        basis = "disclosure" if disc else "turnover"
+        sec_name = members[0].get("sec33_name")
+        for r in members:
+            r["sector_cluster"] = {
+                "sec33": s33, "name": r.get("sec33_name"), "size": len(members),
+                "peers": [{"code": m["code"], "name": m["name"], "rank": m.get("rank"),
+                           "pct": m["pct"], "turnover_m": m["turnover_m"],
+                           "has_disclosure": bool(m.get("disclosures"))}
+                          for m in members if m["code"] != r["code"]],
+                "leader_code": leader["code"], "leader_basis": basis,
+            }
+        summary.append({
+            "sec33": s33, "name": sec_name, "size": len(members),
+            "members": [m["code"] for m in members],
+            "leader_code": leader["code"], "leader_basis": basis,
+        })
+    summary.sort(key=lambda c: -c["size"])
+    return summary
+
+
 def build(session_iso, prev_iso, min_pct=5.0, min_turnover=10_000_000, min_mcap=100,
-          max_rank=50, do_kabutan_shares=True, verbose=True):
+          max_rank=50, do_kabutan_shares=True, do_kabutan_news=False,
+          kabutan_news_top=50, verbose=True):
     def log(*a):
         if verbose:
             print(*a, file=sys.stderr)
@@ -90,12 +139,16 @@ def build(session_iso, prev_iso, min_pct=5.0, min_turnover=10_000_000, min_mcap=
             continue
         qualifying.append(dict(
             code=c4, name=name, market=m.get("MktNm"),
+            sec17=m.get("S17"), sec17_name=m.get("S17Nm"),
+            sec33=m.get("S33"), sec33_name=m.get("S33Nm"),
+            scale_cat=m.get("ScaleCat"),
             mcap_oku=round(mc), mcap_oku_exact=mc, mcap_flag="", mcap_source=source,
             pct=round(pct, 2), close=b.get("C"), adj_close=b.get("AdjC"),
             prev_adj_close=(bars_prev.get(c5) or {}).get("AdjC"),
             turnover_yen=round(va), turnover_m=round(va / 1e6, 1),
             shoutfy_jq=shoutfy, period_end=(period_end.isoformat() if period_end else None),
-            corr=round(corr, 6), disclosures=[], factor="", factor_kind=""))
+            corr=round(corr, 6), disclosures=[], kabutan_news=[],
+            factor="", factor_kind=""))
 
     # 上限：該当総数が max_rank を超えたら値上がり率上位 max_rank 社のみをランキング対象にする。
     # qualifying は cand のソート順（pct 降順）を継承しているので先頭から切り出せばよい。
@@ -119,6 +172,11 @@ def build(session_iso, prev_iso, min_pct=5.0, min_turnover=10_000_000, min_mcap=
     for row in qualifying:
         row["disclosures"] = by.get(row["code"], [])
 
+    # 4.5) セクター連動クラスタ注釈（決定的・同一 S33 で束ね leader を特定）。
+    #      開示有無を leader 判定に使うため TDnet 付与の直後に実行する。
+    theme_clusters = annotate_sector_clusters(qualifying)
+    log(f"# sector clusters(size>=2)={len(theme_clusters)}")
+
     # 5) 株探 最新発行済株式数とのクロスチェック（† 注記。source=='jquants' のみ）
     if do_kabutan_shares:
         log(f"# kabutan shares cross-check for {len(qualifying)} names ...")
@@ -134,6 +192,16 @@ def build(session_iso, prev_iso, min_pct=5.0, min_turnover=10_000_000, min_mcap=
                 if row["close"]:
                     row["mcap_kabutan_oku"] = round(row["close"] * shk / 1e8)
 
+    # 6) 株探 銘柄ニュース（材料・特集〔レーティング日報〕・5%ルール等）の事前充填（任意）。
+    #    変動要因リサーチが「材料未確認」へ落とす前に必ず材料/レーティング見出しを確認できる。
+    #    best-effort（失敗は [] でスキップ）。エンリッチであって権威ではない（Claude が裏取り）。
+    if do_kabutan_news:
+        top = qualifying[:kabutan_news_top] if kabutan_news_top else qualifying
+        log(f"# kabutan news prefetch for {len(top)} names ...")
+        for row in top:
+            row["kabutan_news"] = kabutan_pts.kabutan_news(row["code"])
+            time.sleep(0.3)
+
     return {
         "session_date": session_iso,
         "prev_date": prev_iso,
@@ -146,6 +214,7 @@ def build(session_iso, prev_iso, min_pct=5.0, min_turnover=10_000_000, min_mcap=
                    "dropped_turnover": len(dropped_turnover),
                    "dropped_mcap": len(dropped_mcap), "excluded": len(excluded)},
         "rows": qualifying,
+        "theme_clusters": theme_clusters,
         "dropped_turnover": sorted(dropped_turnover, key=lambda x: -x["pct"]),
         "dropped_mcap": sorted(dropped_mcap, key=lambda x: -x["pct"]),
     }
@@ -162,6 +231,10 @@ def main():
                     help="掲載上限（値上がり率上位N社。0で上限なし。既定50）")
     ap.add_argument("--out", help="JSON 出力先パス（省略時は stdout）")
     ap.add_argument("--no-kabutan-shares", action="store_true")
+    ap.add_argument("--kabutan-news", action="store_true",
+                    help="株探 銘柄ニュース（材料/特集〔レーティング日報〕/5%%ルール）の見出しを各行に事前充填")
+    ap.add_argument("--kabutan-news-top", type=int, default=50,
+                    help="kabutan-news を充填する上位N社（0で全掲載行。既定50）")
     args = ap.parse_args()
 
     sys.stdout.reconfigure(encoding="utf-8")
@@ -177,7 +250,8 @@ def main():
 
     data = build(session_iso, prev_iso, min_pct=args.min_pct, min_turnover=args.min_turnover,
                  min_mcap=args.min_mcap, max_rank=args.max_rank,
-                 do_kabutan_shares=not args.no_kabutan_shares)
+                 do_kabutan_shares=not args.no_kabutan_shares,
+                 do_kabutan_news=args.kabutan_news, kabutan_news_top=args.kabutan_news_top)
     text = json.dumps(data, ensure_ascii=False, indent=2)
     if args.out:
         d = os.path.dirname(os.path.abspath(args.out))
