@@ -1,0 +1,5721 @@
+{
+  "session_date": "2026-07-01",
+  "prev_date": "2026-06-30",
+  "session_window": "2026-07-01 09:00–15:30 JST（前場9:00-11:30／後場12:30-15:30）",
+  "generated_at": "2026-07-01 18:15 JST",
+  "criteria": {
+    "min_pct": 5.0,
+    "min_turnover_yen": 10000000,
+    "min_mcap_oku": 100,
+    "max_rank": 50
+  },
+  "capped": true,
+  "counts": {
+    "qualifying": 71,
+    "ranked": 50,
+    "dropped_turnover": 6,
+    "dropped_mcap": 28,
+    "excluded": 777
+  },
+  "rows": [
+    {
+      "code": "5967",
+      "name": "TONE",
+      "market": "スタンダード",
+      "sec17": "3",
+      "sec17_name": "建設・資材",
+      "sec33": "3550",
+      "sec33_name": "金属製品",
+      "scale_cat": "-",
+      "mcap_oku": 116,
+      "mcap_oku_exact": 116.2,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 19.23,
+      "close": 496.0,
+      "adj_close": 496.0,
+      "prev_adj_close": 416.0,
+      "turnover_yen": 27329600,
+      "turnover_m": 27.3,
+      "shoutfy_jq": 23426000,
+      "period_end": "2026-05-31",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "15:30",
+          "code": "5967",
+          "name": "ＴＯＮＥ",
+          "title": "業績予想の修正（上方修正）および配当予想の修正（増配）に関するお知らせ",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584524.pdf",
+          "origin": "prev",
+          "date": "2026-06-30"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "前営業日（6/30）引け後に業績予想の上方修正（2026年5月期連結営業利益を前回比25%増・9年ぶり最高益に修正）および期末配当の増配（9円→13円）を発表。好業績・増配を好感してストップ高買い気配となった（財経新聞・株探がストップ高を報道）。",
+      "factor_kind": "開示",
+      "rank": 1,
+      "sector_cluster": {
+        "sec33": "3550",
+        "name": "金属製品",
+        "size": 5,
+        "peers": [
+          {
+            "code": "3436",
+            "name": "SUMCO",
+            "rank": 2,
+            "pct": 17.37,
+            "turnover_m": 132237.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "5942",
+            "name": "日本フイルコン",
+            "rank": 4,
+            "pct": 16.26,
+            "turnover_m": 556.7,
+            "has_disclosure": true
+          },
+          {
+            "code": "3445",
+            "name": "RS Technologies",
+            "rank": 9,
+            "pct": 10.3,
+            "turnover_m": 2463.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "3444",
+            "name": "菊池製作所",
+            "rank": 16,
+            "pct": 8.66,
+            "turnover_m": 761.7,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "3444",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "3436",
+      "name": "SUMCO",
+      "market": "プライム",
+      "sec17": "3",
+      "sec17_name": "建設・資材",
+      "sec33": "3550",
+      "sec33_name": "金属製品",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 16560,
+      "mcap_oku_exact": 16559.8,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 17.37,
+      "close": 4729.0,
+      "adj_close": 4729.0,
+      "prev_adj_close": 4029.0,
+      "turnover_yen": 132237306800,
+      "turnover_m": 132237.3,
+      "shoutfy_jq": 350175139,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "世界シェア2位のシリコンウェーハ大手。AI GPU・HBM向け300mmウェーハ需要拡大期待が株価を押し上げた。野村証券が「Buy」を維持・目標株価4,100円へ引き上げ（需給ひっ迫観測）した報告が市場で継続参照される中、前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。金属製品クラスター（日本フイルコン・RS Technologies等5社）内で最大の売買代金を誇るリーダー銘柄として集中的な買いが入った。",
+      "factor_kind": "テーマ",
+      "rank": 2,
+      "sector_cluster": {
+        "sec33": "3550",
+        "name": "金属製品",
+        "size": 5,
+        "peers": [
+          {
+            "code": "5967",
+            "name": "TONE",
+            "rank": 1,
+            "pct": 19.23,
+            "turnover_m": 27.3,
+            "has_disclosure": true
+          },
+          {
+            "code": "5942",
+            "name": "日本フイルコン",
+            "rank": 4,
+            "pct": 16.26,
+            "turnover_m": 556.7,
+            "has_disclosure": true
+          },
+          {
+            "code": "3445",
+            "name": "RS Technologies",
+            "rank": 9,
+            "pct": 10.3,
+            "turnover_m": 2463.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "3444",
+            "name": "菊池製作所",
+            "rank": 16,
+            "pct": 8.66,
+            "turnover_m": 761.7,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "3444",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "6522",
+      "name": "アスタリスク",
+      "market": "グロース",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "-",
+      "mcap_oku": 122,
+      "mcap_oku_exact": 121.6,
+      "mcap_flag": "†",
+      "mcap_source": "jquants",
+      "pct": 17.29,
+      "close": 1560.0,
+      "adj_close": 1560.0,
+      "prev_adj_close": 1330.0,
+      "turnover_yen": 10815233700,
+      "turnover_m": 10815.2,
+      "shoutfy_jq": 7796800,
+      "period_end": "2026-08-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "スマートフォン活用型バーコードリーダー（AsReader）を製造・販売するIoT端末メーカー。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。当日固有の個別材料は確認できず。",
+      "factor_kind": "テーマ",
+      "rank": 3,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      },
+      "shares_kabutan": 8046800,
+      "mcap_kabutan_oku": 126
+    },
+    {
+      "code": "5942",
+      "name": "日本フイルコン",
+      "market": "スタンダード",
+      "sec17": "3",
+      "sec17_name": "建設・資材",
+      "sec33": "3550",
+      "sec33_name": "金属製品",
+      "scale_cat": "-",
+      "mcap_oku": 158,
+      "mcap_oku_exact": 158.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 16.26,
+      "close": 715.0,
+      "adj_close": 715.0,
+      "prev_adj_close": 615.0,
+      "turnover_yen": 556726000,
+      "turnover_m": 556.7,
+      "shoutfy_jq": 22167211,
+      "period_end": "2026-11-30",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "14:00",
+          "code": "5942",
+          "name": "日フイルコン",
+          "title": "従業員持株会支援信託ＥＳＯＰの再導入及び詳細決定に関するお知らせ",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584984.pdf",
+          "origin": "day",
+          "date": "2026-07-01"
+        },
+        {
+          "time": "14:00",
+          "code": "5942",
+          "name": "日フイルコン",
+          "title": "2026年11月期　第２四半期（中間期）決算短信〔日本基準〕(連結)",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260701585363.pdf",
+          "origin": "day",
+          "date": "2026-07-01"
+        },
+        {
+          "time": "14:00",
+          "code": "5942",
+          "name": "日フイルコン",
+          "title": "2026年11月期通期連結業績予想の修正に関するお知らせ",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260701585367.pdf",
+          "origin": "day",
+          "date": "2026-07-01"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "当日（7/1）14:00に2026年11月期第2四半期（中間期）決算短信を開示し、通期連結業績予想の上方修正（増収増益）を同時発表。従業員持株会支援信託（ESOP）の再導入も合わせて開示され、業績改善と従業員還元の両面が評価された。金属製品クラスター（SUMCO等5社）の地合い高も追い風。",
+      "factor_kind": "開示",
+      "rank": 4,
+      "sector_cluster": {
+        "sec33": "3550",
+        "name": "金属製品",
+        "size": 5,
+        "peers": [
+          {
+            "code": "5967",
+            "name": "TONE",
+            "rank": 1,
+            "pct": 19.23,
+            "turnover_m": 27.3,
+            "has_disclosure": true
+          },
+          {
+            "code": "3436",
+            "name": "SUMCO",
+            "rank": 2,
+            "pct": 17.37,
+            "turnover_m": 132237.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "3445",
+            "name": "RS Technologies",
+            "rank": 9,
+            "pct": 10.3,
+            "turnover_m": 2463.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "3444",
+            "name": "菊池製作所",
+            "rank": 16,
+            "pct": 8.66,
+            "turnover_m": 761.7,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "3444",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "9256",
+      "name": "サクシード",
+      "market": "グロース",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "9050",
+      "sec33_name": "サービス業",
+      "scale_cat": "-",
+      "mcap_oku": 191,
+      "mcap_oku_exact": 191.2,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 15.21,
+      "close": 5340.0,
+      "adj_close": 5340.0,
+      "prev_adj_close": 4635.0,
+      "turnover_yen": 1129599500,
+      "turnover_m": 1129.6,
+      "shoutfy_jq": 3579950,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "教育AI（スクールAI）・児童福祉分野へ事業拡大中。2027年3月期に営業利益+11%増、売上高+27%増の大幅成長を見込む。AI活用サービスとしてのテーマ性から物色が継続。サービス業クラスター（弁護士ドットコム）との連動もあり。",
+      "factor_kind": "テーマ",
+      "rank": 5,
+      "sector_cluster": {
+        "sec33": "9050",
+        "name": "サービス業",
+        "size": 2,
+        "peers": [
+          {
+            "code": "6027",
+            "name": "弁護士ドットコム",
+            "rank": 43,
+            "pct": 6.14,
+            "turnover_m": 399.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "9256",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6590",
+      "name": "芝浦メカトロニクス",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 3716,
+      "mcap_oku_exact": 3716.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 15.15,
+      "close": 5320.0,
+      "adj_close": 5320.0,
+      "prev_adj_close": 4620.0,
+      "turnover_yen": 13978961000,
+      "turnover_m": 13979.0,
+      "shoutfy_jq": 69859500,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体洗浄・成膜装置（スピンクリーナー等）の専業メーカー。2026年3月期増収増益、2027年3月期も増収増益を見通す。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 6,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6996",
+      "name": "ニチコン",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 3339,
+      "mcap_oku_exact": 3339.0,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 14.94,
+      "close": 4770.0,
+      "adj_close": 4770.0,
+      "prev_adj_close": 4150.0,
+      "turnover_yen": 9171486500,
+      "turnover_m": 9171.5,
+      "shoutfy_jq": 70000000,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "アルミ電解コンデンサ大手。AIサーバー電源回路・再生可能エネルギー向けパワーエレクトロニクス需要増が背景にある。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 7,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6976",
+      "name": "太陽誘電",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 29501,
+      "mcap_oku_exact": 29501.0,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 12.43,
+      "close": 22655.0,
+      "adj_close": 22655.0,
+      "prev_adj_close": 20150.0,
+      "turnover_yen": 639975022500,
+      "turnover_m": 639975.0,
+      "shoutfy_jq": 130218481,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "積層セラミックコンデンサ（MLCC）でAIサーバー・自動車向け需要が急増。2026年3月期はコンデンサ事業が牽引し営業利益91%増。アナリストが最上位投資判断継続・目標株価増額を維持する中、電気機器クラスター（19社）の売買代金首位リーダーとして大幅高。",
+      "factor_kind": "テーマ",
+      "rank": 8,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "3445",
+      "name": "RS Technologies",
+      "market": "プライム",
+      "sec17": "3",
+      "sec17_name": "建設・資材",
+      "sec33": "3550",
+      "sec33_name": "金属製品",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 2133,
+      "mcap_oku_exact": 2133.3,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 10.3,
+      "close": 8030.0,
+      "adj_close": 8030.0,
+      "prev_adj_close": 7280.0,
+      "turnover_yen": 2463485000,
+      "turnover_m": 2463.5,
+      "shoutfy_jq": 26567102,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "使用済み半導体シリコンウェーハの研磨・再生事業（中古ウェーハ→プライムウェーハに再生）が主力。2026年1Q増収増益（+21%）。SUMCO（世界シェア2位）と同じ金属製品クラスター内でAIウェーハ需要拡大テーマに連動。",
+      "factor_kind": "テーマ",
+      "rank": 9,
+      "sector_cluster": {
+        "sec33": "3550",
+        "name": "金属製品",
+        "size": 5,
+        "peers": [
+          {
+            "code": "5967",
+            "name": "TONE",
+            "rank": 1,
+            "pct": 19.23,
+            "turnover_m": 27.3,
+            "has_disclosure": true
+          },
+          {
+            "code": "3436",
+            "name": "SUMCO",
+            "rank": 2,
+            "pct": 17.37,
+            "turnover_m": 132237.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "5942",
+            "name": "日本フイルコン",
+            "rank": 4,
+            "pct": 16.26,
+            "turnover_m": 556.7,
+            "has_disclosure": true
+          },
+          {
+            "code": "3444",
+            "name": "菊池製作所",
+            "rank": 16,
+            "pct": 8.66,
+            "turnover_m": 761.7,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "3444",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "5258",
+      "name": "トランザクション・メディア・ネットワークス",
+      "market": "グロース",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "5250",
+      "sec33_name": "情報･通信業",
+      "scale_cat": "-",
+      "mcap_oku": 144,
+      "mcap_oku_exact": 143.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 10.23,
+      "close": 388.0,
+      "adj_close": 388.0,
+      "prev_adj_close": 352.0,
+      "turnover_yen": 82110300,
+      "turnover_m": 82.1,
+      "shoutfy_jq": 36996800,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "電子マネー・キャッシュレス決済向けIoT決済端末インフラを提供。情報通信クラスター（イーソル・ダイナミックマッププラットフォーム）内で連動。当日固有の個別材料は確認できず。",
+      "factor_kind": "テーマ",
+      "rank": 10,
+      "sector_cluster": {
+        "sec33": "5250",
+        "name": "情報･通信業",
+        "size": 3,
+        "peers": [
+          {
+            "code": "4420",
+            "name": "イーソル",
+            "rank": 15,
+            "pct": 9.01,
+            "turnover_m": 195.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "336A",
+            "name": "ダイナミックマッププラットフォーム",
+            "rank": 22,
+            "pct": 7.92,
+            "turnover_m": 514.1,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "336A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6779",
+      "name": "日本電波工業",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 870,
+      "mcap_oku_exact": 869.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 9.78,
+      "close": 3760.0,
+      "adj_close": 3760.0,
+      "prev_adj_close": 3425.0,
+      "turnover_yen": 4940824500,
+      "turnover_m": 4940.8,
+      "shoutfy_jq": 23128605,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "水晶デバイス（5G基地局・AIサーバー通信用水晶振動子）メーカー。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 11,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "429A",
+      "name": "テクセンドフォトマスク",
+      "market": "プライム",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "3800",
+      "sec33_name": "その他製品",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 4713,
+      "mcap_oku_exact": 4713.2,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 9.58,
+      "close": 4745.0,
+      "adj_close": 4745.0,
+      "prev_adj_close": 4330.0,
+      "turnover_yen": 7707141500,
+      "turnover_m": 7707.1,
+      "shoutfy_jq": 99329195,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "16:00",
+          "code": "429A",
+          "name": "テクセンド",
+          "title": "支配株主等に関する事項について",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584698.pdf",
+          "origin": "prev",
+          "date": "2026-06-30"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "半導体フォトマスク世界最大手（TOPPAN子会社）。前営業日（6/30）に「支配株主等に関する事項について」を開示し、TOPPAN持分・少数株主保護方針を明示したことで上場会社としての独立性が再確認された。AI向けフォトマスク需要拡大（同社売上高+9.8%・純利益+151%の好業績）テーマも追い風。",
+      "factor_kind": "開示",
+      "rank": 12,
+      "sector_cluster": {
+        "sec33": "3800",
+        "name": "その他製品",
+        "size": 2,
+        "peers": [
+          {
+            "code": "7803",
+            "name": "ブシロード",
+            "rank": 44,
+            "pct": 6.14,
+            "turnover_m": 525.7,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "429A",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "7735",
+      "name": "SCREENホールディングス",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 37179,
+      "mcap_oku_exact": 37179.1,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 9.46,
+      "close": 19490.0,
+      "adj_close": 19490.0,
+      "prev_adj_close": 17805.0,
+      "turnover_yen": 112634821000,
+      "turnover_m": 112634.8,
+      "shoutfy_jq": 190759972,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体洗浄装置（バッチ型・枚葉型）の世界大手。2027年3月期は半導体製造装置投資回復を背景に増収増益を予想。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 13,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "7725",
+      "name": "インターアクション",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3750",
+      "sec33_name": "精密機器",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 230,
+      "mcap_oku_exact": 230.1,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 9.06,
+      "close": 1999.0,
+      "adj_close": 1999.0,
+      "prev_adj_close": 1833.0,
+      "turnover_yen": 485840500,
+      "turnover_m": 485.8,
+      "shoutfy_jq": 11510200,
+      "period_end": "2026-05-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体ウェーハ・部品の光学外観検査装置を製造。AI向け半導体需要急増で精密検査装置への引き合いも拡大。精密機器クラスター（リガク・ジーエルテクノ・IMV）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 14,
+      "sector_cluster": {
+        "sec33": "3750",
+        "name": "精密機器",
+        "size": 4,
+        "peers": [
+          {
+            "code": "255A",
+            "name": "ジーエルテクノホールディングス",
+            "rank": 17,
+            "pct": 8.54,
+            "turnover_m": 992.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "7760",
+            "name": "IMV",
+            "rank": 26,
+            "pct": 7.52,
+            "turnover_m": 299.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "268A",
+            "name": "リガク・ホールディングス",
+            "rank": 28,
+            "pct": 7.44,
+            "turnover_m": 8123.6,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "268A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "4420",
+      "name": "イーソル",
+      "market": "スタンダード",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "5250",
+      "sec33_name": "情報･通信業",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 172,
+      "mcap_oku_exact": 171.8,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 9.01,
+      "close": 859.0,
+      "adj_close": 859.0,
+      "prev_adj_close": 788.0,
+      "turnover_yen": 195302300,
+      "turnover_m": 195.3,
+      "shoutfy_jq": 20000000,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "組込みソフトウェア（RTOS「eT-Kernel」・AUTOSAR対応）のOSメーカー。車載AI・ADAS向け開発需要が拡大。AI/自動運転テーマの情報通信クラスター（ダイナミックマップ・トランザクション）として連動。",
+      "factor_kind": "テーマ",
+      "rank": 15,
+      "sector_cluster": {
+        "sec33": "5250",
+        "name": "情報･通信業",
+        "size": 3,
+        "peers": [
+          {
+            "code": "5258",
+            "name": "トランザクション・メディア・ネットワークス",
+            "rank": 10,
+            "pct": 10.23,
+            "turnover_m": 82.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "336A",
+            "name": "ダイナミックマッププラットフォーム",
+            "rank": 22,
+            "pct": 7.92,
+            "turnover_m": 514.1,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "336A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "3444",
+      "name": "菊池製作所",
+      "market": "スタンダード",
+      "sec17": "3",
+      "sec17_name": "建設・資材",
+      "sec33": "3550",
+      "sec33_name": "金属製品",
+      "scale_cat": "-",
+      "mcap_oku": 149,
+      "mcap_oku_exact": 148.7,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 8.66,
+      "close": 1205.0,
+      "adj_close": 1205.0,
+      "prev_adj_close": 1109.0,
+      "turnover_yen": 761657900,
+      "turnover_m": 761.7,
+      "shoutfy_jq": 12337700,
+      "period_end": "2026-04-30",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "15:45",
+          "code": "3444",
+          "name": "菊池製作所",
+          "title": "代表取締役および役員の異動に関するお知らせ",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584748.pdf",
+          "origin": "prev",
+          "date": "2026-06-30"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "精密プレス金属部品（半導体リードフレーム・自動車部品）メーカー。前営業日（6/30）に役員異動を開示したが株価上昇の主因でなく、金属製品クラスター（SUMCO・RS Technologiesら5社）内でAIウェーハ需要テーマに連動して買いが入った。",
+      "factor_kind": "テーマ",
+      "rank": 16,
+      "sector_cluster": {
+        "sec33": "3550",
+        "name": "金属製品",
+        "size": 5,
+        "peers": [
+          {
+            "code": "5967",
+            "name": "TONE",
+            "rank": 1,
+            "pct": 19.23,
+            "turnover_m": 27.3,
+            "has_disclosure": true
+          },
+          {
+            "code": "3436",
+            "name": "SUMCO",
+            "rank": 2,
+            "pct": 17.37,
+            "turnover_m": 132237.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "5942",
+            "name": "日本フイルコン",
+            "rank": 4,
+            "pct": 16.26,
+            "turnover_m": 556.7,
+            "has_disclosure": true
+          },
+          {
+            "code": "3445",
+            "name": "RS Technologies",
+            "rank": 9,
+            "pct": 10.3,
+            "turnover_m": 2463.5,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "3444",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "255A",
+      "name": "ジーエルテクノホールディングス",
+      "market": "スタンダード",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3750",
+      "sec33_name": "精密機器",
+      "scale_cat": "-",
+      "mcap_oku": 886,
+      "mcap_oku_exact": 886.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 8.54,
+      "close": 6480.0,
+      "adj_close": 6480.0,
+      "prev_adj_close": 5970.0,
+      "turnover_yen": 992500000,
+      "turnover_m": 992.5,
+      "shoutfy_jq": 13681230,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "工作機械・産業機器向けコンポーネントの精密測定・検査関連。精密機器クラスター（リガク・インターアクション・IMV）として連動高。当日固有の個別材料は確認できず。",
+      "factor_kind": "テーマ",
+      "rank": 17,
+      "sector_cluster": {
+        "sec33": "3750",
+        "name": "精密機器",
+        "size": 4,
+        "peers": [
+          {
+            "code": "7725",
+            "name": "インターアクション",
+            "rank": 14,
+            "pct": 9.06,
+            "turnover_m": 485.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7760",
+            "name": "IMV",
+            "rank": 26,
+            "pct": 7.52,
+            "turnover_m": 299.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "268A",
+            "name": "リガク・ホールディングス",
+            "rank": 28,
+            "pct": 7.44,
+            "turnover_m": 8123.6,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "268A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "4238",
+      "name": "ミライアル",
+      "market": "スタンダード",
+      "sec17": "4",
+      "sec17_name": "素材・化学",
+      "sec33": "3200",
+      "sec33_name": "化学",
+      "scale_cat": "-",
+      "mcap_oku": 189,
+      "mcap_oku_exact": 188.7,
+      "mcap_flag": "†",
+      "mcap_source": "jquants",
+      "pct": 8.3,
+      "close": 1865.0,
+      "adj_close": 1865.0,
+      "prev_adj_close": 1722.0,
+      "turnover_yen": 206332500,
+      "turnover_m": 206.3,
+      "shoutfy_jq": 10120000,
+      "period_end": "2027-01-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体シリコンウェーハ搬送容器（FOUP・ウェーハキャリア）で国内最大手。2026年1Q売上+26%・営業利益+121%の大幅増益。SUMCO等と同じ半導体材料テーマで化学クラスター（日本高純度化学・信越ポリマー）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 18,
+      "sector_cluster": {
+        "sec33": "3200",
+        "name": "化学",
+        "size": 3,
+        "peers": [
+          {
+            "code": "4973",
+            "name": "日本高純度化学",
+            "rank": 31,
+            "pct": 7.21,
+            "turnover_m": 693.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "7970",
+            "name": "信越ポリマー",
+            "rank": 50,
+            "pct": 5.79,
+            "turnover_m": 647.7,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "4973",
+        "leader_basis": "turnover"
+      },
+      "shares_kabutan": 9110000,
+      "mcap_kabutan_oku": 170
+    },
+    {
+      "code": "4062",
+      "name": "イビデン",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 72642,
+      "mcap_oku_exact": 72641.8,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 8.27,
+      "close": 25785.0,
+      "adj_close": 25785.0,
+      "prev_adj_close": 23815.0,
+      "turnover_yen": 305316734500,
+      "turnover_m": 305316.7,
+      "shoutfy_jq": 281721114,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "AI GPU向けABF（ビルドアップ）絶縁基板で世界首位。2026年3月期は生成AI用サーバー需要で売上+12.7%・営業利益+30.3%。岐阜県に合計5,000億円の新工場建設を発表済み（2027年から順次稼働）。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）のAI基板関連として注目された。",
+      "factor_kind": "テーマ",
+      "rank": 19,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "7480",
+      "name": "スズデン",
+      "market": "スタンダード",
+      "sec17": "13",
+      "sec17_name": "商社・卸売",
+      "sec33": "6050",
+      "sec33_name": "卸売業",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 329,
+      "mcap_oku_exact": 328.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 8.27,
+      "close": 2474.0,
+      "adj_close": 2474.0,
+      "prev_adj_close": 2285.0,
+      "turnover_yen": 383692800,
+      "turnover_m": 383.7,
+      "shoutfy_jq": 13282000,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "09:00",
+          "code": "7480",
+          "name": "スズデン",
+          "title": "2027年3月期6月度売上高推移速報についてのお知らせ（個別）",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260701585343.pdf",
+          "origin": "day",
+          "date": "2026-07-01"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "電子部品・半導体の専門商社。当日（7/1）9:00に「2027年3月期6月度売上高推移速報」を開示。半導体市場回復を背景に2027年3月期の売上高+12.6%増収見通しを持ち、月次速報の増収傾向が好感された。",
+      "factor_kind": "開示",
+      "rank": 20
+    },
+    {
+      "code": "6336",
+      "name": "石井表記",
+      "market": "スタンダード",
+      "sec17": "8",
+      "sec17_name": "機械",
+      "sec33": "3600",
+      "sec33_name": "機械",
+      "scale_cat": "-",
+      "mcap_oku": 160,
+      "mcap_oku_exact": 159.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 8.21,
+      "close": 1951.0,
+      "adj_close": 1951.0,
+      "prev_adj_close": 1803.0,
+      "turnover_yen": 490292000,
+      "turnover_m": 490.3,
+      "shoutfy_jq": 8176452,
+      "period_end": "2027-01-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "プリント回路板（PCB）製造装置の専業メーカー。AI・半導体パッケージ向け高密度PCB需要増を背景に。機械クラスター（TOWA・タツモ・AIメカテック等6社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 21,
+      "sector_cluster": {
+        "sec33": "3600",
+        "name": "機械",
+        "size": 6,
+        "peers": [
+          {
+            "code": "6266",
+            "name": "タツモ",
+            "rank": 23,
+            "pct": 7.64,
+            "turnover_m": 1731.9,
+            "has_disclosure": false
+          },
+          {
+            "code": "6227",
+            "name": "AIメカテック",
+            "rank": 33,
+            "pct": 7.04,
+            "turnover_m": 12904.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6237",
+            "name": "イワキ",
+            "rank": 36,
+            "pct": 6.67,
+            "turnover_m": 1339.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6134",
+            "name": "FUJI",
+            "rank": 41,
+            "pct": 6.36,
+            "turnover_m": 9309.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6315",
+            "name": "TOWA",
+            "rank": 46,
+            "pct": 5.99,
+            "turnover_m": 18922.4,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6315",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "336A",
+      "name": "ダイナミックマッププラットフォーム",
+      "market": "グロース",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "5250",
+      "sec33_name": "情報･通信業",
+      "scale_cat": "-",
+      "mcap_oku": 206,
+      "mcap_oku_exact": 206.0,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.92,
+      "close": 872.0,
+      "adj_close": 872.0,
+      "prev_adj_close": 808.0,
+      "turnover_yen": 514120500,
+      "turnover_m": 514.1,
+      "shoutfy_jq": 23624850,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "高精度HDマップ（動的地図）データプラットフォームで自動運転インフラを提供。6月24日に北米交通当局向け橋梁・トンネル管理ソリューション提供開始を発表済みで注目継続。AI自動運転テーマの情報通信クラスター（イーソル・トランザクション）として連動。",
+      "factor_kind": "テーマ",
+      "rank": 22,
+      "sector_cluster": {
+        "sec33": "5250",
+        "name": "情報･通信業",
+        "size": 3,
+        "peers": [
+          {
+            "code": "5258",
+            "name": "トランザクション・メディア・ネットワークス",
+            "rank": 10,
+            "pct": 10.23,
+            "turnover_m": 82.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "4420",
+            "name": "イーソル",
+            "rank": 15,
+            "pct": 9.01,
+            "turnover_m": 195.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "336A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6266",
+      "name": "タツモ",
+      "market": "プライム",
+      "sec17": "8",
+      "sec17_name": "機械",
+      "sec33": "3600",
+      "sec33_name": "機械",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 752,
+      "mcap_oku_exact": 752.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.64,
+      "close": 5070.0,
+      "adj_close": 5070.0,
+      "prev_adj_close": 4710.0,
+      "turnover_yen": 1731944500,
+      "turnover_m": 1731.9,
+      "shoutfy_jq": 14842354,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体ウェーハ洗浄・成膜装置メーカー。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。機械クラスター（TOWA・石井表記・FUJI等6社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 23,
+      "sector_cluster": {
+        "sec33": "3600",
+        "name": "機械",
+        "size": 6,
+        "peers": [
+          {
+            "code": "6336",
+            "name": "石井表記",
+            "rank": 21,
+            "pct": 8.21,
+            "turnover_m": 490.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6227",
+            "name": "AIメカテック",
+            "rank": 33,
+            "pct": 7.04,
+            "turnover_m": 12904.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6237",
+            "name": "イワキ",
+            "rank": 36,
+            "pct": 6.67,
+            "turnover_m": 1339.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6134",
+            "name": "FUJI",
+            "rank": 41,
+            "pct": 6.36,
+            "turnover_m": 9309.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6315",
+            "name": "TOWA",
+            "rank": 46,
+            "pct": 5.99,
+            "turnover_m": 18922.4,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6315",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6728",
+      "name": "アルバック",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 5493,
+      "mcap_oku_exact": 5493.3,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.59,
+      "close": 11130.0,
+      "adj_close": 11130.0,
+      "prev_adj_close": 10345.0,
+      "turnover_yen": 6751198500,
+      "turnover_m": 6751.2,
+      "shoutfy_jq": 49355938,
+      "period_end": "2026-06-30",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "真空装置・薄膜成膜装置（PVD・CVD）の世界大手。AI半導体製造ライン向け投資拡大が背景。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 24,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6925",
+      "name": "ウシオ電機",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 4031,
+      "mcap_oku_exact": 4031.4,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.58,
+      "close": 4828.0,
+      "adj_close": 4828.0,
+      "prev_adj_close": 4488.0,
+      "turnover_yen": 5255399100,
+      "turnover_m": 5255.4,
+      "shoutfy_jq": 83500000,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "産業用光源（エキシマランプ・UV光源・半導体露光用光源）メーカー。半導体露光プロセス向け需要が続く。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 25,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "7760",
+      "name": "IMV",
+      "market": "スタンダード",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3750",
+      "sec33_name": "精密機器",
+      "scale_cat": "-",
+      "mcap_oku": 446,
+      "mcap_oku_exact": 446.0,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.52,
+      "close": 2630.0,
+      "adj_close": 2630.0,
+      "prev_adj_close": 2446.0,
+      "turnover_yen": 299238600,
+      "turnover_m": 299.2,
+      "shoutfy_jq": 16957016,
+      "period_end": "2026-09-30",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "振動試験機・地震動試験機の専業メーカー。半導体・EV電池パックの信頼性評価需要が拡大。精密機器クラスター（リガク・インターアクション・ジーエルテクノ）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 26,
+      "sector_cluster": {
+        "sec33": "3750",
+        "name": "精密機器",
+        "size": 4,
+        "peers": [
+          {
+            "code": "7725",
+            "name": "インターアクション",
+            "rank": 14,
+            "pct": 9.06,
+            "turnover_m": 485.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "255A",
+            "name": "ジーエルテクノホールディングス",
+            "rank": 17,
+            "pct": 8.54,
+            "turnover_m": 992.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "268A",
+            "name": "リガク・ホールディングス",
+            "rank": 28,
+            "pct": 7.44,
+            "turnover_m": 8123.6,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "268A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "3513",
+      "name": "イチカワ",
+      "market": "スタンダード",
+      "sec17": "4",
+      "sec17_name": "素材・化学",
+      "sec33": "3100",
+      "sec33_name": "繊維製品",
+      "scale_cat": "-",
+      "mcap_oku": 168,
+      "mcap_oku_exact": 167.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.48,
+      "close": 3375.0,
+      "adj_close": 3375.0,
+      "prev_adj_close": 3140.0,
+      "turnover_yen": 31081000,
+      "turnover_m": 31.1,
+      "shoutfy_jq": 4967151,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "製紙用フェルト・工業用フィルタークロスの専業メーカー。2026年3月期は海外拡大で営業利益+46%増。繊維製品クラスター（三陽商会：自社株買い発表）として連動。当日固有の個別材料は確認できず。",
+      "factor_kind": "テーマ",
+      "rank": 27,
+      "sector_cluster": {
+        "sec33": "3100",
+        "name": "繊維製品",
+        "size": 2,
+        "peers": [
+          {
+            "code": "8011",
+            "name": "三陽商会",
+            "rank": 42,
+            "pct": 6.18,
+            "turnover_m": 451.6,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "8011",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "268A",
+      "name": "リガク・ホールディングス",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3750",
+      "sec33_name": "精密機器",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 6081,
+      "mcap_oku_exact": 6081.2,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.44,
+      "close": 2686.0,
+      "adj_close": 2686.0,
+      "prev_adj_close": 2500.0,
+      "turnover_yen": 8123577900,
+      "turnover_m": 8123.6,
+      "shoutfy_jq": 226402700,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "X線分析・回折装置の世界大手（リガクグループ持株会社）。半導体・素材・製薬向け分析ニーズが拡大。精密機器クラスター（インターアクション・ジーエルテクノ・IMV）の売買代金首位リーダー。当日固有の個別材料は確認できず。",
+      "factor_kind": "テーマ",
+      "rank": 28,
+      "sector_cluster": {
+        "sec33": "3750",
+        "name": "精密機器",
+        "size": 4,
+        "peers": [
+          {
+            "code": "7725",
+            "name": "インターアクション",
+            "rank": 14,
+            "pct": 9.06,
+            "turnover_m": 485.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "255A",
+            "name": "ジーエルテクノホールディングス",
+            "rank": 17,
+            "pct": 8.54,
+            "turnover_m": 992.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "7760",
+            "name": "IMV",
+            "rank": 26,
+            "pct": 7.52,
+            "turnover_m": 299.2,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "268A",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6619",
+      "name": "ダブル・スコープ",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 115,
+      "mcap_oku_exact": 114.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.39,
+      "close": 189.0,
+      "adj_close": 189.0,
+      "prev_adj_close": 176.0,
+      "turnover_yen": 425580000,
+      "turnover_m": 425.6,
+      "shoutfy_jq": 60625500,
+      "period_end": "2027-01-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "リチウムイオン電池用セパレータ（ポリオレフィン系）の主要メーカー。EV・定置型蓄電池需要拡大が背景。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 29,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6971",
+      "name": "京セラ",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Large70",
+      "mcap_oku": 57715,
+      "mcap_oku_exact": 57715.2,
+      "mcap_flag": "†",
+      "mcap_source": "jquants",
+      "pct": 7.3,
+      "close": 3821.0,
+      "adj_close": 3821.0,
+      "prev_adj_close": 3561.0,
+      "turnover_yen": 31295401400,
+      "turnover_m": 31295.4,
+      "shoutfy_jq": 1510474320,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "セラミックパッケージ・MLCC・水晶デバイスなど電子部品の総合大手。AI・自動車・通信インフラ向け電子部品需要の継続拡大が追い風。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 30,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      },
+      "shares_kabutan": 1419100820,
+      "mcap_kabutan_oku": 54224
+    },
+    {
+      "code": "4973",
+      "name": "日本高純度化学",
+      "market": "プライム",
+      "sec17": "4",
+      "sec17_name": "素材・化学",
+      "sec33": "3200",
+      "sec33_name": "化学",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 343,
+      "mcap_oku_exact": 342.8,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.21,
+      "close": 5650.0,
+      "adj_close": 5650.0,
+      "prev_adj_close": 5270.0,
+      "turnover_yen": 693694000,
+      "turnover_m": 693.7,
+      "shoutfy_jq": 6067200,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体製造用高純度化学品（エッチング液・洗浄液・めっき薬品）の専業メーカー。半導体製造プロセス向け需要がAI関連の設備投資増加で拡大。化学クラスター（ミライアル・信越ポリマー）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 31,
+      "sector_cluster": {
+        "sec33": "3200",
+        "name": "化学",
+        "size": 3,
+        "peers": [
+          {
+            "code": "4238",
+            "name": "ミライアル",
+            "rank": 18,
+            "pct": 8.3,
+            "turnover_m": 206.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "7970",
+            "name": "信越ポリマー",
+            "rank": 50,
+            "pct": 5.79,
+            "turnover_m": 647.7,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "4973",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6855",
+      "name": "日本電子材料",
+      "market": "スタンダード",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 1214,
+      "mcap_oku_exact": 1214.1,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.12,
+      "close": 8280.0,
+      "adj_close": 8280.0,
+      "prev_adj_close": 7730.0,
+      "turnover_yen": 5934187000,
+      "turnover_m": 5934.2,
+      "shoutfy_jq": 14663510,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体ウェーハの電気的特性を検査するプローブカード（コンタクトプローブ）の専業メーカー。AI GPU・HBM向け大口径ウェーハ検査需要が急増。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 32,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6227",
+      "name": "AIメカテック",
+      "market": "スタンダード",
+      "sec17": "8",
+      "sec17_name": "機械",
+      "sec33": "3600",
+      "sec33_name": "機械",
+      "scale_cat": "-",
+      "mcap_oku": 1404,
+      "mcap_oku_exact": 1404.3,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 7.04,
+      "close": 7450.0,
+      "adj_close": 7450.0,
+      "prev_adj_close": 6960.0,
+      "turnover_yen": 12904455000,
+      "turnover_m": 12904.5,
+      "shoutfy_jq": 18849000,
+      "period_end": "2026-06-30",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "FPD（液晶・有機EL）・半導体製造用の洗浄・ドライエッチング装置メーカー。AI向け半導体製造装置需要が後押し。機械クラスター（TOWA・石井表記等6社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 33,
+      "sector_cluster": {
+        "sec33": "3600",
+        "name": "機械",
+        "size": 6,
+        "peers": [
+          {
+            "code": "6336",
+            "name": "石井表記",
+            "rank": 21,
+            "pct": 8.21,
+            "turnover_m": 490.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6266",
+            "name": "タツモ",
+            "rank": 23,
+            "pct": 7.64,
+            "turnover_m": 1731.9,
+            "has_disclosure": false
+          },
+          {
+            "code": "6237",
+            "name": "イワキ",
+            "rank": 36,
+            "pct": 6.67,
+            "turnover_m": 1339.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6134",
+            "name": "FUJI",
+            "rank": 41,
+            "pct": 6.36,
+            "turnover_m": 9309.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6315",
+            "name": "TOWA",
+            "rank": 46,
+            "pct": 5.99,
+            "turnover_m": 18922.4,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6315",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6966",
+      "name": "三井ハイテック",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 2011,
+      "mcap_oku_exact": 2010.8,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.93,
+      "close": 1019.0,
+      "adj_close": 1019.0,
+      "prev_adj_close": 953.0,
+      "turnover_yen": 3726140800,
+      "turnover_m": 3726.1,
+      "shoutfy_jq": 197334325,
+      "period_end": "2027-01-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "EV用モーターコア・半導体リードフレームの世界大手。AI・EV向け精密金属部品の需要急増が続く。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 34,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6962",
+      "name": "大真空",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 302,
+      "mcap_oku_exact": 301.8,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.7,
+      "close": 939.0,
+      "adj_close": 939.0,
+      "prev_adj_close": 880.0,
+      "turnover_yen": 699214300,
+      "turnover_m": 699.2,
+      "shoutfy_jq": 32138881,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "水晶デバイス（水晶振動子・水晶発振器）の大手。5G基地局・AIサーバー・IoT機器向け需要が拡大。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 35,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6237",
+      "name": "イワキ",
+      "market": "プライム",
+      "sec17": "8",
+      "sec17_name": "機械",
+      "sec33": "3600",
+      "sec33_name": "機械",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 900,
+      "mcap_oku_exact": 899.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.67,
+      "close": 4000.0,
+      "adj_close": 4000.0,
+      "prev_adj_close": 3750.0,
+      "turnover_yen": 1339734500,
+      "turnover_m": 1339.7,
+      "shoutfy_jq": 22490910,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体製造工程向けケミカルポンプ（薬液搬送ポンプ）の専業メーカー。半導体ファブ増設に伴う設備需要増が継続。機械クラスター（TOWA等6社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 36,
+      "sector_cluster": {
+        "sec33": "3600",
+        "name": "機械",
+        "size": 6,
+        "peers": [
+          {
+            "code": "6336",
+            "name": "石井表記",
+            "rank": 21,
+            "pct": 8.21,
+            "turnover_m": 490.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6266",
+            "name": "タツモ",
+            "rank": 23,
+            "pct": 7.64,
+            "turnover_m": 1731.9,
+            "has_disclosure": false
+          },
+          {
+            "code": "6227",
+            "name": "AIメカテック",
+            "rank": 33,
+            "pct": 7.04,
+            "turnover_m": 12904.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6134",
+            "name": "FUJI",
+            "rank": 41,
+            "pct": 6.36,
+            "turnover_m": 9309.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6315",
+            "name": "TOWA",
+            "rank": 46,
+            "pct": 5.99,
+            "turnover_m": 18922.4,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6315",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6754",
+      "name": "アンリツ",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 6370,
+      "mcap_oku_exact": 6369.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.64,
+      "close": 4688.0,
+      "adj_close": 4688.0,
+      "prev_adj_close": 4396.0,
+      "turnover_yen": 8044059800,
+      "turnover_m": 8044.1,
+      "shoutfy_jq": 135870594,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "通信・計測器メーカー。5G基地局・AIデータセンター向けネットワーク品質計測装置の需要拡大が続く。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 37,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6526",
+      "name": "ソシオネクスト",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 4894,
+      "mcap_oku_exact": 4894.2,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.58,
+      "close": 2719.5,
+      "adj_close": 2719.5,
+      "prev_adj_close": 2551.5,
+      "turnover_yen": 27841345800,
+      "turnover_m": 27841.3,
+      "shoutfy_jq": 179968630,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "カスタムSoC（システムオンチップ）の設計・販売。AIサーバー・自動運転向け特定用途LSI需要が拡大。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 38,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6723",
+      "name": "ルネサスエレクトロニクス",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Large70",
+      "mcap_oku": 95832,
+      "mcap_oku_exact": 95831.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.57,
+      "close": 5123.0,
+      "adj_close": 5123.0,
+      "prev_adj_close": 4807.0,
+      "turnover_yen": 78091690000,
+      "turnover_m": 78091.7,
+      "shoutfy_jq": 1870614885,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "マイコン・SoC（車載・産業・IoT向け）の世界大手。2026年1Q（1-3月）は売上+23.2%・営業利益+320.7%の大幅増益を達成し、産業・インフラ・IoTセグメントを中心に需要が急回復。過去1ヶ月で+56.7%上昇した後も前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動。",
+      "factor_kind": "報道",
+      "rank": 39,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6627",
+      "name": "テラプローブ",
+      "market": "スタンダード",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "-",
+      "mcap_oku": 1327,
+      "mcap_oku_exact": 1327.4,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.4,
+      "close": 14300.0,
+      "adj_close": 14300.0,
+      "prev_adj_close": 13440.0,
+      "turnover_yen": 2030097000,
+      "turnover_m": 2030.1,
+      "shoutfy_jq": 9282500,
+      "period_end": "2026-12-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体後工程（バーンイン・ファンクションテスト）の受託加工サービス。AI向け先端半導体の需要増でテスト工程も拡大。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 40,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6752",
+            "name": "パナソニック ホールディングス",
+            "rank": 47,
+            "pct": 5.95,
+            "turnover_m": 77219.3,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6134",
+      "name": "FUJI",
+      "market": "プライム",
+      "sec17": "8",
+      "sec17_name": "機械",
+      "sec33": "3600",
+      "sec33_name": "機械",
+      "scale_cat": "TOPIX Mid400",
+      "mcap_oku": 8738,
+      "mcap_oku_exact": 8737.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.36,
+      "close": 8932.0,
+      "adj_close": 8932.0,
+      "prev_adj_close": 8398.0,
+      "turnover_yen": 9309000900,
+      "turnover_m": 9309.0,
+      "shoutfy_jq": 97823748,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "チップマウンター（電子部品自動実装機）の世界大手。AIサーバー基板・EV電子部品向け実装需要が増加。機械クラスター（TOWA・石井表記等6社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 41,
+      "sector_cluster": {
+        "sec33": "3600",
+        "name": "機械",
+        "size": 6,
+        "peers": [
+          {
+            "code": "6336",
+            "name": "石井表記",
+            "rank": 21,
+            "pct": 8.21,
+            "turnover_m": 490.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6266",
+            "name": "タツモ",
+            "rank": 23,
+            "pct": 7.64,
+            "turnover_m": 1731.9,
+            "has_disclosure": false
+          },
+          {
+            "code": "6227",
+            "name": "AIメカテック",
+            "rank": 33,
+            "pct": 7.04,
+            "turnover_m": 12904.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6237",
+            "name": "イワキ",
+            "rank": 36,
+            "pct": 6.67,
+            "turnover_m": 1339.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6315",
+            "name": "TOWA",
+            "rank": 46,
+            "pct": 5.99,
+            "turnover_m": 18922.4,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6315",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "8011",
+      "name": "三陽商会",
+      "market": "プライム",
+      "sec17": "4",
+      "sec17_name": "素材・化学",
+      "sec33": "3100",
+      "sec33_name": "繊維製品",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 447,
+      "mcap_oku_exact": 446.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.18,
+      "close": 4380.0,
+      "adj_close": 4380.0,
+      "prev_adj_close": 4125.0,
+      "turnover_yen": 451607500,
+      "turnover_m": 451.6,
+      "shoutfy_jq": 10197034,
+      "period_end": "2027-02-28",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "11:00",
+          "code": "8011",
+          "name": "三陽商",
+          "title": "自己株式の取得状況（途中経過）に関するお知らせ",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584682.pdf",
+          "origin": "day",
+          "date": "2026-07-01"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "当日（7/1）11:00に「自己株式の取得状況（途中経過）に関するお知らせ」を開示。101万株・30億円を上限とした自社株買いの進捗を開示し、需給改善期待から繊維製品クラスター（イチカワ）とともに上昇。",
+      "factor_kind": "開示",
+      "rank": 42,
+      "sector_cluster": {
+        "sec33": "3100",
+        "name": "繊維製品",
+        "size": 2,
+        "peers": [
+          {
+            "code": "3513",
+            "name": "イチカワ",
+            "rank": 27,
+            "pct": 7.48,
+            "turnover_m": 31.1,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "8011",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "6027",
+      "name": "弁護士ドットコム",
+      "market": "プライム",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "9050",
+      "sec33_name": "サービス業",
+      "scale_cat": "TOPIX Small 2",
+      "mcap_oku": 550,
+      "mcap_oku_exact": 549.5,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.14,
+      "close": 2403.0,
+      "adj_close": 2403.0,
+      "prev_adj_close": 2264.0,
+      "turnover_yen": 399332600,
+      "turnover_m": 399.3,
+      "shoutfy_jq": 22867600,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "法律相談プラットフォーム「弁護士ドットコム」とクラウド契約管理「クラウドサイン」を運営。6月29日（前週末）にAI法務エージェントの大幅刷新を発表。2026年3月期は売上+15.7%・営業利益+58.7%と好業績継続。AI法務DXテーマとして注目が集まった。",
+      "factor_kind": "報道",
+      "rank": 43,
+      "sector_cluster": {
+        "sec33": "9050",
+        "name": "サービス業",
+        "size": 2,
+        "peers": [
+          {
+            "code": "9256",
+            "name": "サクシード",
+            "rank": 5,
+            "pct": 15.21,
+            "turnover_m": 1129.6,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "9256",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "7803",
+      "name": "ブシロード",
+      "market": "グロース",
+      "sec17": "10",
+      "sec17_name": "情報通信・サービスその他",
+      "sec33": "3800",
+      "sec33_name": "その他製品",
+      "scale_cat": "-",
+      "mcap_oku": 404,
+      "mcap_oku_exact": 404.0,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.14,
+      "close": 294.0,
+      "adj_close": 294.0,
+      "prev_adj_close": 277.0,
+      "turnover_yen": 525689700,
+      "turnover_m": 525.7,
+      "shoutfy_jq": 137409100,
+      "period_end": "2026-06-30",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "15:30",
+          "code": "7803",
+          "name": "Ｇ－ブシロード",
+          "title": "自己株式取得に係る事項の決定に関するお知らせ",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584064.pdf",
+          "origin": "prev",
+          "date": "2026-06-30"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "前営業日（6/30）引け後に「自己株式取得に係る事項の決定に関するお知らせ」を開示。自社株買い決定が株主還元強化と需給改善の両面で好感された。同社は2026年6月期純利益を前回比+41%の55億円に上方修正済み（5/27発表）でファンダメンタルズも堅調。",
+      "factor_kind": "開示",
+      "rank": 44,
+      "sector_cluster": {
+        "sec33": "3800",
+        "name": "その他製品",
+        "size": 2,
+        "peers": [
+          {
+            "code": "429A",
+            "name": "テクセンドフォトマスク",
+            "rank": 12,
+            "pct": 9.58,
+            "turnover_m": 7707.1,
+            "has_disclosure": true
+          }
+        ],
+        "leader_code": "429A",
+        "leader_basis": "disclosure"
+      }
+    },
+    {
+      "code": "3891",
+      "name": "ニッポン高度紙工業",
+      "market": "スタンダード",
+      "sec17": "4",
+      "sec17_name": "素材・化学",
+      "sec33": "3150",
+      "sec33_name": "パルプ・紙",
+      "scale_cat": "-",
+      "mcap_oku": 1102,
+      "mcap_oku_exact": 1101.9,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 6.08,
+      "close": 10300.0,
+      "adj_close": 10300.0,
+      "prev_adj_close": 9710.0,
+      "turnover_yen": 1748460000,
+      "turnover_m": 1748.5,
+      "shoutfy_jq": 10698482,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "アルミ電解コンデンサ用セパレータ（高度化セルロース紙）で世界首位。AIサーバー電源向けニチコン等の電解コンデンサ需要急増が波及し、素材サプライヤーとして注目された。単独クラスター（単体銘柄）のため当日固有の個別材料は確認できず。",
+      "factor_kind": "テーマ",
+      "rank": 45
+    },
+    {
+      "code": "6315",
+      "name": "TOWA",
+      "market": "プライム",
+      "sec17": "8",
+      "sec17_name": "機械",
+      "sec33": "3600",
+      "sec33_name": "機械",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 2661,
+      "mcap_oku_exact": 2660.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 5.99,
+      "close": 3540.0,
+      "adj_close": 3540.0,
+      "prev_adj_close": 3340.0,
+      "turnover_yen": 18922434500,
+      "turnover_m": 18922.4,
+      "shoutfy_jq": 75157367,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体封止（モールド）装置の世界大手。AI GPU・パワー半導体向け封止工程需要が急増。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。機械クラスター（石井表記・タツモ・FUJI等6社）の売買代金首位リーダーとして連動。",
+      "factor_kind": "テーマ",
+      "rank": 46,
+      "sector_cluster": {
+        "sec33": "3600",
+        "name": "機械",
+        "size": 6,
+        "peers": [
+          {
+            "code": "6336",
+            "name": "石井表記",
+            "rank": 21,
+            "pct": 8.21,
+            "turnover_m": 490.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6266",
+            "name": "タツモ",
+            "rank": 23,
+            "pct": 7.64,
+            "turnover_m": 1731.9,
+            "has_disclosure": false
+          },
+          {
+            "code": "6227",
+            "name": "AIメカテック",
+            "rank": 33,
+            "pct": 7.04,
+            "turnover_m": 12904.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6237",
+            "name": "イワキ",
+            "rank": 36,
+            "pct": 6.67,
+            "turnover_m": 1339.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6134",
+            "name": "FUJI",
+            "rank": 41,
+            "pct": 6.36,
+            "turnover_m": 9309.0,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6315",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "6752",
+      "name": "パナソニック ホールディングス",
+      "market": "プライム",
+      "sec17": "9",
+      "sec17_name": "電機・精密",
+      "sec33": "3650",
+      "sec33_name": "電気機器",
+      "scale_cat": "TOPIX Large70",
+      "mcap_oku": 117081,
+      "mcap_oku_exact": 117081.1,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 5.95,
+      "close": 4770.0,
+      "adj_close": 4770.0,
+      "prev_adj_close": 4502.0,
+      "turnover_yen": 77219276000,
+      "turnover_m": 77219.3,
+      "shoutfy_jq": 2454530697,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "電子部品（コンデンサ・インダクタ）・EV電池（車載・定置）事業でAI・EV需要が続く総合電機大手。前日の米フィラデルフィア半導体株指数（SOX）大幅続伸を受け、AIデータセンター向け半導体需要拡大期待（マイクロン6/24好決算後の強気見通し継続）から東証の半導体関連銘柄に幅広く買いが波及した。電気機器クラスター（19社）として連動高。",
+      "factor_kind": "テーマ",
+      "rank": 47,
+      "sector_cluster": {
+        "sec33": "3650",
+        "name": "電気機器",
+        "size": 19,
+        "peers": [
+          {
+            "code": "6522",
+            "name": "アスタリスク",
+            "rank": 3,
+            "pct": 17.29,
+            "turnover_m": 10815.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6590",
+            "name": "芝浦メカトロニクス",
+            "rank": 6,
+            "pct": 15.15,
+            "turnover_m": 13979.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6996",
+            "name": "ニチコン",
+            "rank": 7,
+            "pct": 14.94,
+            "turnover_m": 9171.5,
+            "has_disclosure": false
+          },
+          {
+            "code": "6976",
+            "name": "太陽誘電",
+            "rank": 8,
+            "pct": 12.43,
+            "turnover_m": 639975.0,
+            "has_disclosure": false
+          },
+          {
+            "code": "6779",
+            "name": "日本電波工業",
+            "rank": 11,
+            "pct": 9.78,
+            "turnover_m": 4940.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "rank": 13,
+            "pct": 9.46,
+            "turnover_m": 112634.8,
+            "has_disclosure": false
+          },
+          {
+            "code": "4062",
+            "name": "イビデン",
+            "rank": 19,
+            "pct": 8.27,
+            "turnover_m": 305316.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6728",
+            "name": "アルバック",
+            "rank": 24,
+            "pct": 7.59,
+            "turnover_m": 6751.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6925",
+            "name": "ウシオ電機",
+            "rank": 25,
+            "pct": 7.58,
+            "turnover_m": 5255.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6619",
+            "name": "ダブル・スコープ",
+            "rank": 29,
+            "pct": 7.39,
+            "turnover_m": 425.6,
+            "has_disclosure": false
+          },
+          {
+            "code": "6971",
+            "name": "京セラ",
+            "rank": 30,
+            "pct": 7.3,
+            "turnover_m": 31295.4,
+            "has_disclosure": false
+          },
+          {
+            "code": "6855",
+            "name": "日本電子材料",
+            "rank": 32,
+            "pct": 7.12,
+            "turnover_m": 5934.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6966",
+            "name": "三井ハイテック",
+            "rank": 34,
+            "pct": 6.93,
+            "turnover_m": 3726.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6962",
+            "name": "大真空",
+            "rank": 35,
+            "pct": 6.7,
+            "turnover_m": 699.2,
+            "has_disclosure": false
+          },
+          {
+            "code": "6754",
+            "name": "アンリツ",
+            "rank": 37,
+            "pct": 6.64,
+            "turnover_m": 8044.1,
+            "has_disclosure": false
+          },
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "rank": 38,
+            "pct": 6.58,
+            "turnover_m": 27841.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "6723",
+            "name": "ルネサスエレクトロニクス",
+            "rank": 39,
+            "pct": 6.57,
+            "turnover_m": 78091.7,
+            "has_disclosure": false
+          },
+          {
+            "code": "6627",
+            "name": "テラプローブ",
+            "rank": 40,
+            "pct": 6.4,
+            "turnover_m": 2030.1,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "6976",
+        "leader_basis": "turnover"
+      }
+    },
+    {
+      "code": "2586",
+      "name": "フルッタフルッタ",
+      "market": "グロース",
+      "sec17": "1",
+      "sec17_name": "食品",
+      "sec33": "3050",
+      "sec33_name": "食料品",
+      "scale_cat": "-",
+      "mcap_oku": 114,
+      "mcap_oku_exact": 113.8,
+      "mcap_flag": "†",
+      "mcap_source": "jquants",
+      "pct": 5.94,
+      "close": 107.0,
+      "adj_close": 107.0,
+      "prev_adj_close": 101.0,
+      "turnover_yen": 290778100,
+      "turnover_m": 290.8,
+      "shoutfy_jq": 106394569,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "15:30",
+          "code": "2586",
+          "name": "Ｇ－フルッタフルッタ",
+          "title": "事業計画及び成長可能性に関する事項",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630584357.pdf",
+          "origin": "prev",
+          "date": "2026-06-30"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "前営業日（6/30）引け後に「事業計画及び成長可能性に関する事項」を開示。アサイー飲料の中国・アジア輸出拡大計画と国内新チャネル展開の詳細を示し、中長期成長可能性への注目が買いを呼んだ。",
+      "factor_kind": "開示",
+      "rank": 48,
+      "shares_kabutan": 113264569,
+      "mcap_kabutan_oku": 121
+    },
+    {
+      "code": "2652",
+      "name": "まんだらけ",
+      "market": "スタンダード",
+      "sec17": "14",
+      "sec17_name": "小売",
+      "sec33": "6100",
+      "sec33_name": "小売業",
+      "scale_cat": "-",
+      "mcap_oku": 156,
+      "mcap_oku_exact": 156.3,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 5.88,
+      "close": 432.0,
+      "adj_close": 432.0,
+      "prev_adj_close": 408.0,
+      "turnover_yen": 131926100,
+      "turnover_m": 131.9,
+      "shoutfy_jq": 36180000,
+      "period_end": "2026-09-30",
+      "corr": 1.0,
+      "disclosures": [
+        {
+          "time": "15:45",
+          "code": "2652",
+          "name": "まんだらけ",
+          "title": "2026年９月期売上高推移報告について",
+          "pdf_url": "https://www.release.tdnet.info/inbs/140120260630582619.pdf",
+          "origin": "prev",
+          "date": "2026-06-30"
+        }
+      ],
+      "kabutan_news": [],
+      "factor": "前営業日（6/30）15:45に「2026年9月期売上高推移報告」を開示。中古マンガ・コレクターズアイテム専門小売の売上成長継続（直近期は売上+57.7%・純利益+214%の大幅増）を確認し好感された。",
+      "factor_kind": "開示",
+      "rank": 49
+    },
+    {
+      "code": "7970",
+      "name": "信越ポリマー",
+      "market": "プライム",
+      "sec17": "4",
+      "sec17_name": "素材・化学",
+      "sec33": "3200",
+      "sec33_name": "化学",
+      "scale_cat": "TOPIX Small 1",
+      "mcap_oku": 2099,
+      "mcap_oku_exact": 2098.6,
+      "mcap_flag": "",
+      "mcap_source": "jquants",
+      "pct": 5.79,
+      "close": 2540.0,
+      "adj_close": 2540.0,
+      "prev_adj_close": 2401.0,
+      "turnover_yen": 647688000,
+      "turnover_m": 647.7,
+      "shoutfy_jq": 82623376,
+      "period_end": "2026-03-31",
+      "corr": 1.0,
+      "disclosures": [],
+      "kabutan_news": [],
+      "factor": "半導体グレードシリコン素材（シリコーンゴム製品・ウェーハキャリア等）でシリコン事業を展開。信越化学工業の子会社。ミライアル（ウェーハ容器）・日本高純度化学と同じ化学クラスター内でAI半導体材料テーマに連動。2026年3月期は半導体関連製品が牽引し売上+4.1%・営業利益+5.8%増益。",
+      "factor_kind": "テーマ",
+      "rank": 50,
+      "sector_cluster": {
+        "sec33": "3200",
+        "name": "化学",
+        "size": 3,
+        "peers": [
+          {
+            "code": "4238",
+            "name": "ミライアル",
+            "rank": 18,
+            "pct": 8.3,
+            "turnover_m": 206.3,
+            "has_disclosure": false
+          },
+          {
+            "code": "4973",
+            "name": "日本高純度化学",
+            "rank": 31,
+            "pct": 7.21,
+            "turnover_m": 693.7,
+            "has_disclosure": false
+          }
+        ],
+        "leader_code": "4973",
+        "leader_basis": "turnover"
+      }
+    }
+  ],
+  "theme_clusters": [
+    {
+      "sec33": "3650",
+      "name": "電気機器",
+      "size": 19,
+      "members": [
+        "6522",
+        "6590",
+        "6996",
+        "6976",
+        "6779",
+        "7735",
+        "4062",
+        "6728",
+        "6925",
+        "6619",
+        "6971",
+        "6855",
+        "6966",
+        "6962",
+        "6754",
+        "6526",
+        "6723",
+        "6627",
+        "6752"
+      ],
+      "leader_code": "6976",
+      "leader_basis": "turnover"
+    },
+    {
+      "sec33": "3600",
+      "name": "機械",
+      "size": 6,
+      "members": [
+        "6336",
+        "6266",
+        "6227",
+        "6237",
+        "6134",
+        "6315"
+      ],
+      "leader_code": "6315",
+      "leader_basis": "turnover"
+    },
+    {
+      "sec33": "3550",
+      "name": "金属製品",
+      "size": 5,
+      "members": [
+        "5967",
+        "3436",
+        "5942",
+        "3445",
+        "3444"
+      ],
+      "leader_code": "3444",
+      "leader_basis": "disclosure"
+    },
+    {
+      "sec33": "3750",
+      "name": "精密機器",
+      "size": 4,
+      "members": [
+        "7725",
+        "255A",
+        "7760",
+        "268A"
+      ],
+      "leader_code": "268A",
+      "leader_basis": "turnover"
+    },
+    {
+      "sec33": "5250",
+      "name": "情報･通信業",
+      "size": 3,
+      "members": [
+        "5258",
+        "4420",
+        "336A"
+      ],
+      "leader_code": "336A",
+      "leader_basis": "turnover"
+    },
+    {
+      "sec33": "3200",
+      "name": "化学",
+      "size": 3,
+      "members": [
+        "4238",
+        "4973",
+        "7970"
+      ],
+      "leader_code": "4973",
+      "leader_basis": "turnover"
+    },
+    {
+      "sec33": "9050",
+      "name": "サービス業",
+      "size": 2,
+      "members": [
+        "9256",
+        "6027"
+      ],
+      "leader_code": "9256",
+      "leader_basis": "turnover"
+    },
+    {
+      "sec33": "3800",
+      "name": "その他製品",
+      "size": 2,
+      "members": [
+        "429A",
+        "7803"
+      ],
+      "leader_code": "429A",
+      "leader_basis": "disclosure"
+    },
+    {
+      "sec33": "3100",
+      "name": "繊維製品",
+      "size": 2,
+      "members": [
+        "3513",
+        "8011"
+      ],
+      "leader_code": "8011",
+      "leader_basis": "disclosure"
+    }
+  ],
+  "dropped_turnover": [
+    {
+      "code": "3787",
+      "name": "テクノマセマティカル",
+      "pct": 9.44,
+      "turnover_m": 3.4
+    },
+    {
+      "code": "4389",
+      "name": "プロパティデータバンク",
+      "pct": 7.92,
+      "turnover_m": 8.3
+    },
+    {
+      "code": "5867",
+      "name": "エスネットワークス",
+      "pct": 6.19,
+      "turnover_m": 2.2
+    },
+    {
+      "code": "9258",
+      "name": "CS−C",
+      "pct": 5.78,
+      "turnover_m": 0.2
+    },
+    {
+      "code": "7709",
+      "name": "クボテック",
+      "pct": 5.77,
+      "turnover_m": 4.1
+    },
+    {
+      "code": "7034",
+      "name": "プロレド・パートナーズ",
+      "pct": 5.69,
+      "turnover_m": 9.0
+    }
+  ],
+  "dropped_mcap": [
+    {
+      "code": "4833",
+      "name": "Def consulting",
+      "pct": 54.05,
+      "turnover_m": 1494.5,
+      "mcap_oku": 41,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "9425",
+      "name": "ReYuu Japan",
+      "pct": 30.3,
+      "turnover_m": 476.4,
+      "mcap_oku": 15,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "7041",
+      "name": "CRGホールディングス",
+      "pct": 29.96,
+      "turnover_m": 11.3,
+      "mcap_oku": 19,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "7815",
+      "name": "東京ボード工業",
+      "pct": 27.2,
+      "turnover_m": 552.5,
+      "mcap_oku": 18,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "589A",
+      "name": "ネイス",
+      "pct": 22.52,
+      "turnover_m": 88.3,
+      "mcap_oku": 89,
+      "mcap_source": "yahoo"
+    },
+    {
+      "code": "7063",
+      "name": "Birdman",
+      "pct": 18.75,
+      "turnover_m": 322.2,
+      "mcap_oku": 26,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "4424",
+      "name": "Amazia",
+      "pct": 14.63,
+      "turnover_m": 888.9,
+      "mcap_oku": 16,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "265A",
+      "name": "Hmcomm",
+      "pct": 14.37,
+      "turnover_m": 21.7,
+      "mcap_oku": 33,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "8894",
+      "name": "REVOLUTION",
+      "pct": 13.04,
+      "turnover_m": 413.3,
+      "mcap_oku": 40,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "6837",
+      "name": "京写",
+      "pct": 12.94,
+      "turnover_m": 360.0,
+      "mcap_oku": 61,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "330A",
+      "name": "TalentX",
+      "pct": 12.89,
+      "turnover_m": 264.6,
+      "mcap_oku": 27,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "3237",
+      "name": "イントランス",
+      "pct": 12.37,
+      "turnover_m": 180.3,
+      "mcap_oku": 51,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "192A",
+      "name": "インテグループ",
+      "pct": 11.6,
+      "turnover_m": 93.8,
+      "mcap_oku": 30,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "2345",
+      "name": "HODL1",
+      "pct": 11.43,
+      "turnover_m": 54.1,
+      "mcap_oku": 22,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "4414",
+      "name": "フレクト",
+      "pct": 11.04,
+      "turnover_m": 62.1,
+      "mcap_oku": 70,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "3133",
+      "name": "海帆",
+      "pct": 8.7,
+      "turnover_m": 818.7,
+      "mcap_oku": 44,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "6573",
+      "name": "CRAVIA",
+      "pct": 8.0,
+      "turnover_m": 75.8,
+      "mcap_oku": 9,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "3187",
+      "name": "ミラタップ",
+      "pct": 7.76,
+      "turnover_m": 20.1,
+      "mcap_oku": 48,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "4069",
+      "name": "BlueMeme",
+      "pct": 7.25,
+      "turnover_m": 14.6,
+      "mcap_oku": 25,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "8746",
+      "name": "unbanked",
+      "pct": 7.0,
+      "turnover_m": 272.1,
+      "mcap_oku": 14,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "5255",
+      "name": "モンスターラボ",
+      "pct": 6.94,
+      "turnover_m": 95.2,
+      "mcap_oku": 50,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "7878",
+      "name": "光・彩",
+      "pct": 6.57,
+      "turnover_m": 21.2,
+      "mcap_oku": 25,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "7061",
+      "name": "日本ホスピスホールディングス",
+      "pct": 6.12,
+      "turnover_m": 35.5,
+      "mcap_oku": 47,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "4564",
+      "name": "オンコセラピー・サイエンス",
+      "pct": 5.56,
+      "turnover_m": 3153.9,
+      "mcap_oku": 73,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "1447",
+      "name": "SAAFホールディングス",
+      "pct": 5.56,
+      "turnover_m": 59.3,
+      "mcap_oku": 74,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "4169",
+      "name": "ENECHANGE",
+      "pct": 5.38,
+      "turnover_m": 175.7,
+      "mcap_oku": 84,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "6663",
+      "name": "太洋テクノレックス",
+      "pct": 5.14,
+      "turnover_m": 278.6,
+      "mcap_oku": 20,
+      "mcap_source": "jquants"
+    },
+    {
+      "code": "3840",
+      "name": "パス",
+      "pct": 5.0,
+      "turnover_m": 28.0,
+      "mcap_oku": 52,
+      "mcap_source": "jquants"
+    }
+  ]
+}
