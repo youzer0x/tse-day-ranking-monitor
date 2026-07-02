@@ -6,3 +6,5 @@ docs/tmp/
 ranking.json
 *.log
 .DS_Store
+# 計画・設計メモ（履歴として手元に保持。リポジトリには追跡させない）
+/PLAN_market-analysis-integration_*.md

@@ -6,7 +6,7 @@
 <title>東証 値上がり率ランキング</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#eef1f5;--card:#fff;--primary:#11243f;--accent:#c0392b;--text:#222;--sub:#6b7785;--border:#e2e6ea;--hover:#f5f8ff;}
+:root{--bg:#eef1f5;--card:#fff;--primary:#11243f;--accent:#c0392b;--down:#1b7f3b;--text:#222;--sub:#6b7785;--border:#e2e6ea;--hover:#f5f8ff;}
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
 .header{background:linear-gradient(135deg,#11243f,#24507f);color:#fff;padding:24px 28px 18px;}
@@ -49,14 +49,47 @@ tbody tr:hover td{background:var(--hover);}
 .dropped summary{cursor:pointer;font-size:13px;color:var(--sub);padding:8px 4px;}
 .footer{text-align:center;padding:18px;font-size:11px;color:var(--sub);}
 .loading,.empty{text-align:center;padding:50px 20px;color:var(--sub);}
+/* ---- 市況サマリー帯（ランキング上部） ---- */
+.mstrip{max-width:1280px;margin:16px auto 0;padding:0 16px;}
+.mstrip-inner{background:var(--card);border-radius:10px;border-left:4px solid var(--primary);box-shadow:0 2px 8px rgba(0,0,0,.06);padding:12px 16px;}
+.mstrip .thesis{font-size:14px;font-weight:700;color:var(--primary);line-height:1.5;}
+.mstrip .chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px;}
+.mstrip .schip{font-size:12px;background:#f6f8fc;border:1px solid var(--border);border-radius:6px;padding:3px 9px;font-family:Arial,'Noto Sans JP',sans-serif;}
+.mstrip .schip.up{color:var(--accent);} .mstrip .schip.down{color:var(--down);}
+.mstrip a.more{margin-left:auto;font-size:13px;font-weight:700;color:var(--primary);text-decoration:none;white-space:nowrap;}
+.mstrip a.more:hover{text-decoration:underline;}
+/* ---- 市場分析ビュー ---- */
+.msec{background:var(--card);border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:18px 20px;margin-bottom:16px;}
+.msec h2{font-size:15px;color:var(--primary);font-weight:700;border-bottom:2px solid var(--primary);padding-bottom:6px;margin-bottom:12px;}
+.msec .lead{font-size:12px;color:var(--sub);margin-bottom:10px;}
+blockquote.mthesis{font-size:14px;font-weight:700;color:var(--primary);background:#fff8e6;border:1px solid #f0d97a;border-left:4px solid #d9a300;border-radius:0 6px 6px 0;padding:10px 14px;margin:0 0 6px;line-height:1.6;}
+.msec ul,.msec ol{margin:0 0 6px 1.2em;} .msec li{font-size:13px;line-height:1.6;margin:3px 0;}
+.msec .flowc{font-size:13.5px;font-weight:700;color:var(--primary);margin-top:10px;background:#f6f8fc;border-left:4px solid var(--accent);border-radius:0 6px 6px 0;padding:10px 14px;line-height:1.6;}
+.stk{color:#0b7285;font-weight:700;}
+.msec .mfoot{font-size:12px;color:var(--sub);margin-top:8px;line-height:1.55;}
+.msec .mnote{font-size:12px;color:var(--sub);line-height:1.55;margin-top:4px;}
+.msec .thead-note{font-weight:700;color:var(--primary);}
+table.kv{width:100%;border-collapse:collapse;font-size:13px;}
+table.kv td{padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;}
+table.kv td.k{color:var(--sub);white-space:nowrap;width:1%;} table.kv td.v{font-weight:700;font-family:Arial,'Noto Sans JP',sans-serif;white-space:nowrap;} table.kv td.n{color:var(--sub);font-size:12px;}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.pdown{font-family:Arial,sans-serif;text-align:right;white-space:nowrap;color:var(--down);font-weight:600;}
+.mtag{display:inline-block;font-size:10px;color:#fff;background:var(--sub);border-radius:3px;padding:1px 6px;margin-left:5px;}
+.barcell{min-width:150px;}
+.barwrap{position:relative;height:14px;background:#f0f2f5;border-radius:3px;margin-top:3px;}
+.barwrap::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:#c7ced6;}
+.barpos{position:absolute;left:50%;top:0;bottom:0;background:var(--accent);border-radius:0 3px 3px 0;}
+.barneg{position:absolute;right:50%;top:0;bottom:0;background:#2ca25f;border-radius:3px 0 0 3px;}
+.mmatrix td.mbuy{color:var(--accent);} .mmatrix td.msell{color:var(--down);}
+.msec a{color:#1a6fd0;text-decoration:none;} .msec a:hover{text-decoration:underline;}
 @media(max-width:820px){
  .header{padding:18px 14px;} .header-inner{flex-direction:column;align-items:flex-start;}
  .header h1{font-size:18px;}
- table,thead,tbody,tr,td{display:block;width:100%;}
- thead{display:none;}
- .card{background:transparent;box-shadow:none;border-radius:0;overflow:visible;}
- tbody tr{background:var(--card);border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);margin:0 0 12px;padding:12px 14px;border:none;}
- tbody td{padding:0;border:none;text-align:left!important;}
+ #viewRanking table,#viewRanking thead,#viewRanking tbody,#viewRanking tr,#viewRanking td{display:block;width:100%;}
+ #viewRanking thead{display:none;}
+ #viewRanking .card{background:transparent;box-shadow:none;border-radius:0;overflow:visible;}
+ #viewRanking tbody tr{background:var(--card);border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);margin:0 0 12px;padding:12px 14px;border:none;}
+ #viewRanking tbody td{padding:0;border:none;text-align:left!important;}
  #tableArea td.rank{display:block;font-size:13px;color:var(--sub);font-family:Arial,sans-serif;}
  #tableArea td.rank::before{content:'#';}
  #tableArea td.code{display:none;}
@@ -64,20 +97,24 @@ tbody tr:hover td{background:var(--hover);}
  #tableArea td.name .code-inline{display:inline;font-weight:700;}
  #tableArea td.name .mcap{font-size:12px;}
  #tableArea td.mkt{display:block;font-size:12px;color:var(--sub);}
- td.pct,td.num{display:inline-block;width:49%;font-size:14px;margin-top:8px;text-align:left;vertical-align:top;}
- td.pct::before,td.num::before{content:attr(data-label)'\00a0';display:block;color:var(--sub);font-size:11px;font-weight:400;font-family:'Noto Sans JP';}
- td.factor{min-width:0;margin-top:10px;padding-top:9px;border-top:1px solid var(--border)!important;}
+ #viewRanking td.pct,#viewRanking td.num{display:inline-block;width:49%;font-size:14px;margin-top:8px;text-align:left;vertical-align:top;}
+ #viewRanking td.pct::before,#viewRanking td.num::before{content:attr(data-label)'\00a0';display:block;color:var(--sub);font-size:11px;font-weight:400;font-family:'Noto Sans JP';}
+ #viewRanking td.factor{min-width:0;margin-top:10px;padding-top:9px;border-top:1px solid var(--border)!important;}
+ .msec{padding:14px 12px;} .mstrip .chips{gap:6px;} .mstrip a.more{margin-left:0;}
 }
 </style></head>
 <body>
 <div class="header"><div class="header-inner">
   <nav class="tabs">
-    <h1 class="tab active">📈 東証 値上がり率ランキング</h1>
+    <h1 class="tab active" id="tabRanking" onclick="location.hash=''">📈 東証 値上がり率ランキング</h1>
+    <a class="tab" id="tabMarket" href="#market">📊 市場分析</a>
     <a class="tab" href="https://youzer0x.github.io/pts-ranking-monitor/">📈 PTS 夜間 値上がり率ランキング</a>
   </nav>
   <div class="date-selector"><label for="dateSelect">セッション日:</label>
   <select id="dateSelect" onchange="loadDate(this.value)"><option>読み込み中...</option></select></div>
 </div></div>
+<div id="viewRanking">
+<div class="mstrip" id="marketStrip" style="display:none"></div>
 <div class="summary" id="summary"></div>
 <div class="container">
   <div class="note" id="note"></div>
@@ -86,9 +123,12 @@ tbody tr:hover td{background:var(--hover);}
   </div>
 <div class="container" style="margin-top:0;"><div id="droppedArea"></div></div>
 </div>
-<div class="footer">東証 値上がりランキング・モニター｜Claude 定期実行で自動生成｜価格・売買代金・終値・時価総額＝J-Quants V2／開示＝TDnet｜本情報は参考であり投資助言ではない</div>
+</div>
+<div id="viewMarket" style="display:none"><div class="container" id="marketArea"></div></div>
+<div class="footer">東証 値上がりランキング・モニター｜Claude 定期実行で自動生成｜価格・売買代金・終値・時価総額＝J-Quants V2／開示＝TDnet｜市場分析＝J-Quants V2 集計（売買代金1億円以上）｜本情報は参考であり投資助言ではない</div>
 <script>
 let data=null;
+let marketData=null;
 function fmtMcap(o,f){if(o==null)return '—';return o.toLocaleString('ja-JP')+(f||'');}
 function fmtPct(p){return p==null?'—':'+'+Number(p).toFixed(2)+'%';}
 function fmtNum(x){return x==null?'—':Number(x).toLocaleString('ja-JP');}
@@ -107,14 +147,18 @@ async function init(){
     const sel=document.getElementById('dateSelect');sel.innerHTML='';
     if(!m.dates||!m.dates.length){sel.innerHTML='<option>データなし</option>';document.getElementById('tableArea').innerHTML='<div class="empty">まだデータがありません。</div>';return;}
     m.dates.forEach((d,i)=>{const o=document.createElement('option');o.value=d;const dt=new Date(d+'T00:00:00');o.textContent=d+' ('+['日','月','火','水','木','金','土'][dt.getDay()]+')';if(i===0)o.selected=true;sel.appendChild(o);});
+    window.addEventListener('hashchange',applyHash);
     loadDate(m.dates[0]);
   }catch(e){document.getElementById('tableArea').innerHTML='<div class="empty">データの読み込みに失敗しました。</div>';}
 }
 async function loadDate(d){
   if(!d)return;
   document.getElementById('tableArea').innerHTML='<div class="loading">読み込み中…</div>';
+  const marketReq=fetch('data/'+d+'_market.json?'+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json();}).catch(()=>null);
   try{data=await (await fetch('data/'+d+'.json?'+Date.now())).json();render();}
   catch(e){document.getElementById('tableArea').innerHTML='<div class="empty">この日付のデータを読み込めませんでした。</div>';}
+  try{marketData=await marketReq;}catch(e){marketData=null;}
+  renderStrip();renderMarket();applyHash();
 }
 function render(){
   const rows=data.rows||data.items||[];   /* data.items は旧形式 JSON 後方互換 */
@@ -170,6 +214,143 @@ function render(){
     dh+='</tbody></table></details>';
   }
   document.getElementById('droppedArea').innerHTML=dh;
+}
+/* ===================== 市場分析ビュー ===================== */
+function mdInline(s){
+  s=esc(s==null?'':s);
+  s=s.replace(/\[\[([^\]]+)\]\]/g,'<span class="stk">$1</span>');
+  s=s.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  s=s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  return s;
+}
+function pctClass(v){return (Number(v)>=0)?'pct':'pdown';}
+function pctStr(v){if(v==null)return '—';var n=Number(v);return (n>=0?'+':'')+n.toFixed(2)+'%';}
+function applyHash(){
+  var market=(location.hash==='#market');
+  var vr=document.getElementById('viewRanking'),vm=document.getElementById('viewMarket');
+  if(vr)vr.style.display=market?'none':'';
+  if(vm)vm.style.display=market?'':'none';
+  var tr=document.getElementById('tabRanking'),tm=document.getElementById('tabMarket');
+  if(tr)tr.classList.toggle('active',!market);
+  if(tm)tm.classList.toggle('active',market);
+}
+function renderStrip(){
+  var el=document.getElementById('marketStrip');if(!el)return;
+  if(!marketData){el.style.display='none';el.innerHTML='';return;}
+  var m=marketData.market||{},b=m.breadth||{},st=marketData.strip||{},chips='';
+  if(m.topix_pct!=null)chips+='<span class="schip '+pctClass(m.topix_pct)+'">TOPIX '+pctStr(m.topix_pct)+'</span>';
+  if(b.up!=null)chips+='<span class="schip">値上がり '+b.up+' / 値下がり '+b.down+'</span>';
+  (st.sectors_up||[]).forEach(function(s){chips+='<span class="schip up">'+esc(s.name)+' '+pctStr(s.pct)+'</span>';});
+  (st.sectors_down||[]).forEach(function(s){chips+='<span class="schip down">'+esc(s.name)+' '+pctStr(s.pct)+'</span>';});
+  el.innerHTML='<div class="mstrip-inner"><div class="thesis">'+mdInline(marketData.thesis||'')+'</div><div class="chips">'+chips+'<a class="more" href="#market">市場分析を見る →</a></div></div>';
+  el.style.display='';
+}
+function sectorBars(sectors){
+  var maxAbs=1;sectors.forEach(function(s){var a=Math.abs(Number(s.w_pct)||0);if(a>maxAbs)maxAbs=a;});
+  var h='<div class="tscroll"><table><thead><tr><th>33業種</th><th class="r">加重騰落率</th><th class="barcell"></th><th class="r">単純平均</th><th class="r">中央値</th><th class="r">上昇/下落</th><th class="r">売買代金<br>(億円)</th></tr></thead><tbody>';
+  sectors.forEach(function(s){
+    var w=Number(s.w_pct)||0,width=Math.abs(w)/maxAbs*50;
+    var bar='<div class="barwrap">'+(w>=0?'<div class="barpos" style="width:'+width+'%"></div>':'<div class="barneg" style="width:'+width+'%"></div>')+'</div>';
+    h+='<tr><td>'+esc(s.name)+(s.flag?'<span class="mtag">'+esc(s.flag)+'</span>':'')+'</td>'+
+      '<td class="'+pctClass(w)+'">'+pctStr(w)+'</td>'+
+      '<td class="barcell">'+bar+'</td>'+
+      '<td class="'+pctClass(s.mean_pct)+'">'+pctStr(s.mean_pct)+'</td>'+
+      '<td class="'+pctClass(s.median_pct)+'">'+pctStr(s.median_pct)+'</td>'+
+      '<td class="num">'+s.up+' / '+s.down+'</td>'+
+      '<td class="num">'+fmtTurnover(s.turnover_oku)+'</td></tr>';
+  });
+  return h+'</tbody></table></div>';
+}
+function moverRows(list){
+  var h='<div class="tscroll"><table><thead><tr><th>コード</th><th>銘柄</th><th class="r">前日比</th><th class="r">売買代金<br>(億円)</th><th>材料</th></tr></thead><tbody>';
+  list.forEach(function(m){
+    var code=fmtCode(m.code);
+    var links=(m.links||[]).map(function(l){return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>';}).join('　');
+    var note=mdInline(m.note||'')+(links?' <span style="color:var(--sub)">（'+links+'）</span>':'');
+    h+='<tr><td class="code"><a href="https://kabutan.jp/stock/?code='+esc(code)+'" target="_blank" rel="noopener">'+esc(code)+'</a></td>'+
+      '<td class="name">'+(m.emph?'<strong>'+esc(m.name)+'</strong>':esc(m.name))+'</td>'+
+      '<td class="'+pctClass(m.pct)+'">'+pctStr(m.pct)+'</td>'+
+      '<td class="num">'+fmtTurnover(m.turnover_oku)+'</td>'+
+      '<td class="factor">'+note+'</td></tr>';
+  });
+  return h+'</tbody></table></div>';
+}
+function sideSection(title,side,noteCol){
+  side=side||{};var tbl=side.table||[],themes=side.themes||[];
+  if(!tbl.length&&!themes.length)return '';
+  var h='<div class="msec"><h2>'+esc(title)+'</h2>';
+  if(tbl.length){
+    h+='<div class="tscroll"><table><thead><tr><th>セクター</th><th class="r">加重</th><th class="r">中央値</th><th class="r">上昇/下落</th><th>'+esc(noteCol)+'</th></tr></thead><tbody>';
+    tbl.forEach(function(r){
+      h+='<tr><td>'+esc(r.sector)+(r.flag?'<span class="mtag">'+esc(r.flag)+'</span>':'')+'</td>'+
+        '<td class="'+pctClass(r.w_pct)+'">'+pctStr(r.w_pct)+'</td>'+
+        '<td class="'+pctClass(r.median_pct)+'">'+pctStr(r.median_pct)+'</td>'+
+        '<td class="num">'+r.up+' / '+r.down+'</td>'+
+        '<td class="factor">'+mdInline(r.note||'')+'</td></tr>';
+    });
+    h+='</tbody></table></div>';
+  }
+  themes.forEach(function(t){
+    h+='<div class="thead-note" style="font-size:13px;margin:10px 0 2px">'+esc(t.title)+'</div><ul>';
+    (t.bullets||[]).forEach(function(b){h+='<li>'+mdInline(b)+'</li>';});
+    h+='</ul>';
+  });
+  return h+'</div>';
+}
+function themeSection(tm){
+  tm=tm||{};
+  if(!tm.rows||!tm.rows.length)return '';
+  var h='<div class="msec"><h2>テーマ別の資金フロー</h2><div class="tscroll"><table class="mmatrix"><thead><tr><th></th><th>🔴 買われた</th><th>🟢 売られた</th></tr></thead><tbody>';
+  tm.rows.forEach(function(r){h+='<tr><td class="thead-note">'+esc(r.theme)+'</td><td class="mbuy">'+mdInline(r.bought||'')+'</td><td class="msell">'+mdInline(r.sold||'')+'</td></tr>';});
+  h+='</tbody></table></div>';
+  if(tm.character)h+='<div class="mnote" style="margin-top:8px">'+mdInline(tm.character)+'</div>';
+  return h+'</div>';
+}
+function renderMarket(){
+  var el=document.getElementById('marketArea');if(!el)return;
+  if(!marketData){el.innerHTML='<div class="empty">この日付の市場分析データはありません。</div>';return;}
+  var d=marketData,u=d.universe||{},h='';
+  h+='<div class="msec"><h2>'+esc(d.title||'市場分析')+'</h2>';
+  h+='<div class="lead">対象日 '+esc(d.session_date||'')+(d.prev_date?'（前営業日 '+esc(d.prev_date)+'）':'')+(u.description?'　／　'+esc(u.description)+(u.n_liquid?'（'+Number(u.n_liquid).toLocaleString('ja-JP')+'銘柄）':''):'')+'</div>';
+  if(d.thesis)h+='<blockquote class="mthesis">'+mdInline(d.thesis)+'</blockquote>';
+  h+='</div>';
+  var ov=d.overview||{};
+  if(ov.snapshot&&ov.snapshot.length){
+    h+='<div class="msec"><h2>市場概況</h2><table class="kv"><tbody>';
+    ov.snapshot.forEach(function(r){h+='<tr><td class="k">'+esc(r.label)+'</td><td class="v">'+esc(r.value)+'</td><td class="n">'+esc(r.note||'')+'</td></tr>';});
+    h+='</tbody></table>';
+    if(ov.points&&ov.points.length){h+='<ul>';ov.points.forEach(function(p){h+='<li>'+mdInline(p)+'</li>';});h+='</ul>';}
+    if(ov.flow&&ov.flow.length){h+='<div class="lead" style="margin-top:6px">一日の構図</div><ol>';ov.flow.forEach(function(p){h+='<li>'+mdInline(p)+'</li>';});h+='</ol>';}
+    if(ov.flow_conclusion)h+='<div class="flowc">'+mdInline(ov.flow_conclusion)+'</div>';
+    h+='</div>';
+  }
+  h+=themeSection(d.theme_matrix);
+  if(d.sectors33&&d.sectors33.length){
+    h+='<div class="msec"><h2>セクター騰落率（東証33業種・売買代金加重）</h2>'+sectorBars(d.sectors33);
+    (d.sector_notes||[]).forEach(function(n){h+='<div class="mnote"><span class="thead-note">'+esc(n.mark)+'</span> '+mdInline(n.text)+'</div>';});
+    h+='</div>';
+  }
+  h+=sideSection('買われたセクター/テーマ',d.bought,'位置づけ');
+  h+=sideSection('売られたセクター/テーマ',d.sold,'主因');
+  var mv=d.movers||{};
+  if((mv.gainers&&mv.gainers.length)||(mv.losers&&mv.losers.length)){
+    h+='<div class="msec"><h2>注目個別銘柄と材料</h2>';
+    if(mv.gainers&&mv.gainers.length){h+='<div class="thead-note" style="font-size:13px;margin-bottom:4px">🔴 買われた銘柄</div>'+moverRows(mv.gainers);if(mv.gainers_footnote)h+='<div class="mfoot">💡 '+mdInline(mv.gainers_footnote)+'</div>';}
+    if(mv.losers&&mv.losers.length){h+='<div class="thead-note" style="font-size:13px;margin:14px 0 4px">🟢 売られた銘柄</div>'+moverRows(mv.losers);if(mv.losers_footnote)h+='<div class="mfoot">💡 '+mdInline(mv.losers_footnote)+'</div>';}
+    h+='</div>';
+  }
+  h+='<div class="msec"><details><summary style="cursor:pointer;color:var(--sub);font-size:13px">データ・手法・出典</summary>';
+  var me=d.methodology||{};
+  if(me.lines&&me.lines.length){h+='<ul style="margin-top:10px">';me.lines.forEach(function(l){h+='<li>'+mdInline(l)+'</li>';});h+='</ul>';}
+  if(d.news_sources&&d.news_sources.length){
+    h+='<div class="mnote" style="margin-top:8px"><span class="thead-note">ニュース・個別材料の出典'+(d.sources_accessed?'（アクセス: '+esc(d.sources_accessed)+'）':'')+'</span></div><ul>';
+    d.news_sources.forEach(function(ns){var ls=(ns.links||[]).map(function(l){return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>';}).join('／');h+='<li>'+esc(ns.topic)+'：'+ls+'</li>';});
+    h+='</ul>';
+  }
+  h+='</details>';
+  if(d.disclaimer&&d.disclaimer.length){h+='<div class="mfoot" style="margin-top:10px">';d.disclaimer.forEach(function(l){h+='<div>・'+mdInline(l)+'</div>';});h+='</div>';}
+  h+='</div>';
+  el.innerHTML=h;
 }
 init();
 </script>

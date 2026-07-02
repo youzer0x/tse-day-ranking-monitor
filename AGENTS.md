@@ -60,6 +60,14 @@
 
 - オンデマンド版と同じ `である調` 全文を `reports/tse-rankings/<date>_tse-gainers.md` 相当として併せて出力してよい（リポ運用に合わせる）。
 
+## 市場分析タブ（`<date>_market.json`・手動・**日次ルーチン対象外**）
+
+- ランキング Pages（`docs/index.html`）は、値上がりランキングに加えて **上部の市況サマリー帯**と **「📊 市場分析」タブ**（`#market` ハッシュで開く）を持つ。データは**ランキング JSON とは別ファイル** `docs/data/<date>_market.json`（スキーマ v1）から fetch する（無い日付はサマリー帯非表示・タブは empty 表示に自然退避）。`manifest.json` には**載せない**（`update_manifest()` が `_market` を意図的に除外）。
+- 市場分析データは `test-jquants` の `sector_analysis.py` が出す CSV（`sector_return_<date>.csv`・`movers_top_<date>.csv`）から**数値を機械転記**し、Claude/人が書いた**ナラティブ・フラグメント JSON**（テーゼ・背景・材料・出典）と結合して生成する。結合器は `scripts/build_market_json.py`（stdlib のみ・セクター名/銘柄コードの完全一致バリデーション・冪等出力）。
+  - 生成例：`python scripts/build_market_json.py --date <date> --csv-dir <test-jquants>/output --narrative <fragment>.json --out docs/data/<date>_market.json`
+  - フラグメントは作業用（コミットしない）。公開成果物は `docs/data/<date>_market.json` と再生成した `docs/index.html`。
+- **現状は手動反映のみ**（初回＝2026-07-01）。**上記の日次フロー（step1-6）には組み込まれていない**。`cleanup_old()` は `<date>_market.json` も同じ30日保持ポリシーで削除する（`base[:10]` 判定）。将来ルーチンへ統合する場合は「決定的CSV生成 → Claude がフラグメント執筆 → `build_market_json.py` → publish」を step4 前後に足すだけでよい（別プラン）。
+
 ## 関連
 
 - 方法論：`skills/tse-ranking-digest/SKILL.md`

@@ -51,7 +51,9 @@ def cleanup_old(docs_dir, keep_days=30):
         if base == "manifest.json":
             continue
         try:
-            if date.fromisoformat(base[:-5]) < cutoff:
+            # base[:10] で先頭の YYYY-MM-DD を取り、"<date>.json" と
+            # サイドカーの "<date>_market.json" の双方を同じ保持期間で削除する。
+            if date.fromisoformat(base[:10]) < cutoff:
                 os.remove(fn)
         except ValueError:
             pass
@@ -65,6 +67,10 @@ def update_manifest(docs_dir):
         if base == "manifest.json":
             continue
         try:
+            # 意図的に base[:-5]（".json" を除いた全体）で解釈する。
+            # "<date>_market.json" は "<date>_market" が ValueError となり
+            # ランキング日付一覧から除外される（日付セレクタに重複日を出さない）。
+            # ここを base[:10] に変えると market サイドカーで日付が重複するため変えないこと。
             dates.append(date.fromisoformat(base[:-5]).isoformat())
         except ValueError:
             pass
@@ -76,7 +82,9 @@ def update_manifest(docs_dir):
 def write_index(docs_dir):
     os.makedirs(docs_dir, exist_ok=True)
     path = os.path.join(docs_dir, "index.html")
-    with open(path, "w", encoding="utf-8") as f:
+    # newline="\n" を明示し、Windows ローカル実行でも CRLF 化しない
+    # （Linux ルーチンの LF 出力と揃え、無用な全行差分を防ぐ）。
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(html_generator.generate_pages_html())
     print(f"  pages html: {path}")
 

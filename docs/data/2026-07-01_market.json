@@ -1,0 +1,1023 @@
+{
+  "schema_version": 1,
+  "kind": "market_analysis",
+  "session_date": "2026-07-01",
+  "prev_date": "2026-06-30",
+  "generated_at": "2026-07-02 15:30 JST",
+  "title": "東京株式市場 セクター/テーマ 騰落率分析",
+  "universe": {
+    "description": "東証プライム/スタンダード/グロースの内国普通株のうち当日売買代金1億円以上",
+    "min_turnover_yen": 100000000,
+    "n_liquid": 1502
+  },
+  "market": {
+    "topix_pct": 0.42,
+    "breadth": {
+      "up": 655,
+      "down": 811,
+      "flat": 36
+    },
+    "top_sector_by_turnover": {
+      "name": "電気機器",
+      "turnover_oku": 58619.1
+    },
+    "top_stock_by_turnover": {
+      "code": "6976",
+      "name": "太陽誘電",
+      "turnover_oku": 6399.8
+    }
+  },
+  "thesis": "「指数は小幅高、中身は逆行安」— AI半導体・電子部品への一極買いと、金利上昇メリットを受けた銀行の逆行高の裏で、内需・ディフェンシブ・金利敏感株が広く売られた一日。",
+  "strip": {
+    "sectors_up": [
+      {
+        "name": "電気機器",
+        "pct": 2.25
+      },
+      {
+        "name": "機械",
+        "pct": 2.69
+      },
+      {
+        "name": "銀行業",
+        "pct": 0.99
+      }
+    ],
+    "sectors_down": [
+      {
+        "name": "非鉄金属",
+        "pct": -4.99
+      },
+      {
+        "name": "小売業",
+        "pct": -2.39
+      },
+      {
+        "name": "不動産業",
+        "pct": -2.28
+      }
+    ]
+  },
+  "overview": {
+    "snapshot": [
+      {
+        "label": "TOPIX（終値ベース）",
+        "value": "+0.42%",
+        "note": "J-Quants算出"
+      },
+      {
+        "label": "日経平均（前引け）",
+        "value": "+184円（+0.26%） 70,246円",
+        "note": "寄り後 一時＋1,900円 → 利益確定で失速"
+      },
+      {
+        "label": "値上がり / 値下がり / 変わらず",
+        "value": "655 / 811 / 36",
+        "note": "指数プラスでも値下がり優勢"
+      },
+      {
+        "label": "最大売買代金セクター",
+        "value": "電気機器 約5.9兆円",
+        "note": "次位＝機械5,762億円／非鉄金属6,251億円"
+      },
+      {
+        "label": "最大売買代金銘柄",
+        "value": "太陽誘電 6,400億円",
+        "note": "全市場トップ"
+      },
+      {
+        "label": "為替",
+        "value": "1ドル＝162.7円台（円安）",
+        "note": "輸出・半導体に追い風／ダウ先物軟調は重し"
+      }
+    ],
+    "points": [
+      "**物色は極端に偏在** — 指数を押し上げたのは一部のAI・半導体大型株のみ。値上がりより値下がりが多い「逆行相場」。",
+      "**資金は電気機器に集中** — 33業種の売買代金合計で電気機器が突出（約5.9兆円）。"
+    ],
+    "flow": [
+      "**前日の米AI・ハイテク高** → 寄り付きで半導体・電子部品に資金集中（一時＋1,900円）",
+      "**利益確定売り**で指数が失速 → 上げ幅を大きく縮小",
+      "**上昇が続く長期金利**を背景に、金利敏感・高配当ディフェンシブ・内需株が広く売られる（銀行のみ金利メリットで逆行高）"
+    ],
+    "flow_conclusion": "指数はプラスでも値下がり銘柄（811）が値上がり（655）を上回り、上昇は一部の大型半導体株に偏った“見かけの上昇”だった。"
+  },
+  "sectors33": [
+    {
+      "name": "金属製品",
+      "n": 26,
+      "up": 10,
+      "down": 16,
+      "flat": 0,
+      "w_pct": 15.09,
+      "mean_pct": 1.02,
+      "median_pct": -0.64,
+      "turnover_oku": 1535.3,
+      "flag": "⚠1"
+    },
+    {
+      "name": "機械",
+      "n": 110,
+      "up": 85,
+      "down": 20,
+      "flat": 5,
+      "w_pct": 2.69,
+      "mean_pct": 1.69,
+      "median_pct": 1.38,
+      "turnover_oku": 5761.5
+    },
+    {
+      "name": "電気機器",
+      "n": 144,
+      "up": 95,
+      "down": 47,
+      "flat": 2,
+      "w_pct": 2.25,
+      "mean_pct": 1.92,
+      "median_pct": 1.5,
+      "turnover_oku": 58619.1
+    },
+    {
+      "name": "その他製品",
+      "n": 37,
+      "up": 17,
+      "down": 20,
+      "flat": 0,
+      "w_pct": 1.85,
+      "mean_pct": 0.95,
+      "median_pct": -0.35,
+      "turnover_oku": 1096.3
+    },
+    {
+      "name": "証券･商品先物取引業",
+      "n": 21,
+      "up": 16,
+      "down": 4,
+      "flat": 1,
+      "w_pct": 1.83,
+      "mean_pct": 1.31,
+      "median_pct": 1.19,
+      "turnover_oku": 422.3
+    },
+    {
+      "name": "パルプ・紙",
+      "n": 9,
+      "up": 5,
+      "down": 4,
+      "flat": 0,
+      "w_pct": 1.75,
+      "mean_pct": 0.71,
+      "median_pct": 0.22,
+      "turnover_oku": 68.1
+    },
+    {
+      "name": "化学",
+      "n": 108,
+      "up": 58,
+      "down": 49,
+      "flat": 1,
+      "w_pct": 1.67,
+      "mean_pct": 0.42,
+      "median_pct": 0.18,
+      "turnover_oku": 3098.3
+    },
+    {
+      "name": "倉庫･運輸関連業",
+      "n": 6,
+      "up": 6,
+      "down": 0,
+      "flat": 0,
+      "w_pct": 1.41,
+      "mean_pct": 1.47,
+      "median_pct": 0.91,
+      "turnover_oku": 72.2
+    },
+    {
+      "name": "銀行業",
+      "n": 67,
+      "up": 56,
+      "down": 10,
+      "flat": 1,
+      "w_pct": 0.99,
+      "mean_pct": 0.96,
+      "median_pct": 0.99,
+      "turnover_oku": 3106.1
+    },
+    {
+      "name": "ゴム製品",
+      "n": 10,
+      "up": 6,
+      "down": 4,
+      "flat": 0,
+      "w_pct": 0.75,
+      "mean_pct": 0.1,
+      "median_pct": 0.22,
+      "turnover_oku": 246.3
+    },
+    {
+      "name": "サービス業",
+      "n": 102,
+      "up": 30,
+      "down": 68,
+      "flat": 4,
+      "w_pct": 0.44,
+      "mean_pct": 0.13,
+      "median_pct": -0.78,
+      "turnover_oku": 1768.5
+    },
+    {
+      "name": "その他金融業",
+      "n": 22,
+      "up": 11,
+      "down": 11,
+      "flat": 0,
+      "w_pct": 0.31,
+      "mean_pct": -0.87,
+      "median_pct": 0.09,
+      "turnover_oku": 449.5
+    },
+    {
+      "name": "精密機器",
+      "n": 34,
+      "up": 12,
+      "down": 21,
+      "flat": 1,
+      "w_pct": 0.27,
+      "mean_pct": 0.01,
+      "median_pct": -0.58,
+      "turnover_oku": 987.8
+    },
+    {
+      "name": "食料品",
+      "n": 50,
+      "up": 7,
+      "down": 42,
+      "flat": 1,
+      "w_pct": 0.23,
+      "mean_pct": -1.5,
+      "median_pct": -1.51,
+      "turnover_oku": 1388.7
+    },
+    {
+      "name": "石油･石炭製品",
+      "n": 4,
+      "up": 2,
+      "down": 2,
+      "flat": 0,
+      "w_pct": 0.2,
+      "mean_pct": -0.69,
+      "median_pct": -0.15,
+      "turnover_oku": 159.6
+    },
+    {
+      "name": "電気･ガス業",
+      "n": 22,
+      "up": 8,
+      "down": 13,
+      "flat": 1,
+      "w_pct": 0.02,
+      "mean_pct": -0.52,
+      "median_pct": -0.38,
+      "turnover_oku": 821.6
+    },
+    {
+      "name": "保険業",
+      "n": 10,
+      "up": 5,
+      "down": 5,
+      "flat": 0,
+      "w_pct": -0.03,
+      "mean_pct": -0.32,
+      "median_pct": -0.16,
+      "turnover_oku": 1188.7
+    },
+    {
+      "name": "卸売業",
+      "n": 100,
+      "up": 34,
+      "down": 62,
+      "flat": 4,
+      "w_pct": -0.08,
+      "mean_pct": -0.51,
+      "median_pct": -0.25,
+      "turnover_oku": 2381.6
+    },
+    {
+      "name": "空運業",
+      "n": 2,
+      "up": 1,
+      "down": 1,
+      "flat": 0,
+      "w_pct": -0.12,
+      "mean_pct": -0.12,
+      "median_pct": -0.12,
+      "turnover_oku": 132.1
+    },
+    {
+      "name": "情報･通信業",
+      "n": 156,
+      "up": 71,
+      "down": 79,
+      "flat": 6,
+      "w_pct": -0.45,
+      "mean_pct": 0.06,
+      "median_pct": -0.08,
+      "turnover_oku": 5155.4
+    },
+    {
+      "name": "建設業",
+      "n": 68,
+      "up": 22,
+      "down": 44,
+      "flat": 2,
+      "w_pct": -0.53,
+      "mean_pct": -0.59,
+      "median_pct": -0.35,
+      "turnover_oku": 1189.7
+    },
+    {
+      "name": "繊維製品",
+      "n": 16,
+      "up": 7,
+      "down": 9,
+      "flat": 0,
+      "w_pct": -0.53,
+      "mean_pct": -0.07,
+      "median_pct": -0.22,
+      "turnover_oku": 165.9
+    },
+    {
+      "name": "鉄鋼",
+      "n": 19,
+      "up": 9,
+      "down": 9,
+      "flat": 1,
+      "w_pct": -0.56,
+      "mean_pct": -0.06,
+      "median_pct": 0.0,
+      "turnover_oku": 362.2
+    },
+    {
+      "name": "医薬品",
+      "n": 43,
+      "up": 10,
+      "down": 33,
+      "flat": 0,
+      "w_pct": -1.34,
+      "mean_pct": -0.95,
+      "median_pct": -0.94,
+      "turnover_oku": 1133.6
+    },
+    {
+      "name": "鉱業",
+      "n": 5,
+      "up": 1,
+      "down": 4,
+      "flat": 0,
+      "w_pct": -1.44,
+      "mean_pct": -0.36,
+      "median_pct": -1.84,
+      "turnover_oku": 167.2
+    },
+    {
+      "name": "陸運業",
+      "n": 34,
+      "up": 2,
+      "down": 31,
+      "flat": 1,
+      "w_pct": -1.98,
+      "mean_pct": -1.67,
+      "median_pct": -1.75,
+      "turnover_oku": 768.3
+    },
+    {
+      "name": "不動産業",
+      "n": 59,
+      "up": 12,
+      "down": 45,
+      "flat": 2,
+      "w_pct": -2.28,
+      "mean_pct": -1.02,
+      "median_pct": -1.2,
+      "turnover_oku": 823.0
+    },
+    {
+      "name": "水産・農林業",
+      "n": 5,
+      "up": 1,
+      "down": 4,
+      "flat": 0,
+      "w_pct": -2.3,
+      "mean_pct": -1.43,
+      "median_pct": -1.37,
+      "turnover_oku": 34.2
+    },
+    {
+      "name": "小売業",
+      "n": 120,
+      "up": 12,
+      "down": 107,
+      "flat": 1,
+      "w_pct": -2.39,
+      "mean_pct": -1.89,
+      "median_pct": -1.83,
+      "turnover_oku": 2818.4
+    },
+    {
+      "name": "ガラス･土石製品",
+      "n": 24,
+      "up": 9,
+      "down": 14,
+      "flat": 1,
+      "w_pct": -2.67,
+      "mean_pct": -0.8,
+      "median_pct": -0.29,
+      "turnover_oku": 1055.6
+    },
+    {
+      "name": "海運業",
+      "n": 6,
+      "up": 2,
+      "down": 4,
+      "flat": 0,
+      "w_pct": -2.92,
+      "mean_pct": -1.0,
+      "median_pct": -1.46,
+      "turnover_oku": 430.8
+    },
+    {
+      "name": "輸送用機器",
+      "n": 45,
+      "up": 27,
+      "down": 17,
+      "flat": 1,
+      "w_pct": -2.93,
+      "mean_pct": 0.32,
+      "median_pct": 0.35,
+      "turnover_oku": 3084.5,
+      "flag": "⚠2"
+    },
+    {
+      "name": "非鉄金属",
+      "n": 18,
+      "up": 6,
+      "down": 12,
+      "flat": 0,
+      "w_pct": -4.99,
+      "mean_pct": -1.6,
+      "median_pct": -1.75,
+      "turnover_oku": 6250.7
+    }
+  ],
+  "sector_notes": [
+    {
+      "mark": "⚠1",
+      "text": "**金属製品(+15.09%)は「セクターが買われた」わけではない** — 中央値は−0.64%、上昇10/下落16と大半が下落。[[SUMCO]]（+17.37%・売買代金1,322億円）1銘柄で押し上げられた見かけ上の値。"
+    },
+    {
+      "mark": "⚠2",
+      "text": "**輸送用機器(−2.93%)も大型株の歪み** — 中央値は**+0.35%**・上昇27/下落17と上昇銘柄が多数。加重の下げは[[川崎重工]]（−7.66%・1,235億円）主導＝「防衛・重工の調整」で、自動車株全般の下げではない。"
+    },
+    {
+      "mark": "示唆",
+      "text": "**加重騰落率が大きく動いても、中央値・騰落数が逆を向くセクターは「セクター全体の物色」ではなく大型株1銘柄の歪みと読むべきである。** 本日は金属製品（実体は[[SUMCO]]1銘柄の急騰）・輸送用機器（実体は[[川崎重工業]]の急落）がその典型で、セクター全面高・全面安ではない。"
+    }
+  ],
+  "bought": {
+    "table": [
+      {
+        "sector": "電気機器",
+        "w_pct": 2.25,
+        "median_pct": 1.5,
+        "up": 95,
+        "down": 47,
+        "note": "**主役・AI半導体/電子部品**"
+      },
+      {
+        "sector": "機械",
+        "w_pct": 2.69,
+        "median_pct": 1.38,
+        "up": 85,
+        "down": 20,
+        "note": "半導体製造装置"
+      },
+      {
+        "sector": "銀行業",
+        "w_pct": 0.99,
+        "median_pct": 0.99,
+        "up": 56,
+        "down": 10,
+        "note": "**金利上昇メリット**"
+      },
+      {
+        "sector": "証券･商品先物取引業",
+        "w_pct": 1.83,
+        "median_pct": 1.19,
+        "up": 16,
+        "down": 4,
+        "note": "金融物色の一角"
+      },
+      {
+        "sector": "化学",
+        "w_pct": 1.67,
+        "median_pct": 0.18,
+        "up": 58,
+        "down": 49,
+        "note": "半導体材料の一部（方向感は限定的）"
+      },
+      {
+        "sector": "金属製品",
+        "w_pct": 15.09,
+        "median_pct": -0.64,
+        "up": 10,
+        "down": 16,
+        "note": "SUMCO単独の歪み",
+        "flag": "⚠"
+      }
+    ],
+    "themes": [
+      {
+        "title": "① AI・半導体／電子部品（本日の主役）",
+        "bullets": [
+          "売買代金・値上がり数ともに厚く、**銘柄数の広がりを伴った本物の物色**（電気機器 95↑/47↓、機械 85↑/20↓）。",
+          "**前日の米ハイテク株高**＋**AI（GPU・HBM）需要拡大**が日本の半導体装置・電子部品に波及（[株探](https://s.kabutan.jp/news/n202607010670/)）。",
+          "牽引役 ▶ [[太陽誘電]]・[[SUMCO]]・[[イビデン]]・[[SCREEN]]・[[KOKUSAI]]・[[京セラ]]・[[TOWA]]・[[村田製作所]] など（個別材料は「注目個別銘柄」参照）。"
+        ]
+      },
+      {
+        "title": "② 銀行業 — 金利上昇の逆行高",
+        "bullets": [
+          "56↑/10↓と**極めて広範に買われた**数少ない内需セクター。",
+          "10年国債利回りが5月に**一時約2.8%（約29年ぶり高水準）**まで上昇 → **利ざや拡大期待**（[三井住友DSアセット](https://www.smd-am.co.jp/market/macroview/2026/mvreport20260518/)）。",
+          "※同じ金利敏感でも、銀行は「買い」／不動産・高配当ディフェンシブは「売り」と明暗が分かれた。"
+        ]
+      },
+      {
+        "title": "③ 証券・商品先物",
+        "bullets": [
+          "売買代金増加・株高局面の収益期待。銀行と並ぶ金融物色。"
+        ]
+      },
+      {
+        "title": "（参考）化学・金属製品",
+        "bullets": [
+          "化学は半導体材料の一部物色だが方向感は限定的。金属製品は[[SUMCO]]主導の見かけ上位（⚠）。"
+        ]
+      }
+    ]
+  },
+  "sold": {
+    "table": [
+      {
+        "sector": "非鉄金属",
+        "w_pct": -4.99,
+        "median_pct": -1.75,
+        "up": 6,
+        "down": 12,
+        "note": "[[古河電気工業]]主導・AI周辺の利益確定"
+      },
+      {
+        "sector": "輸送用機器",
+        "w_pct": -2.93,
+        "median_pct": 0.35,
+        "up": 27,
+        "down": 17,
+        "note": "[[川崎重工]]（防衛）の調整",
+        "flag": "⚠"
+      },
+      {
+        "sector": "海運業",
+        "w_pct": -2.92,
+        "median_pct": -1.46,
+        "up": 2,
+        "down": 4,
+        "note": "シクリカル調整・薄商い"
+      },
+      {
+        "sector": "ガラス･土石製品",
+        "w_pct": -2.67,
+        "median_pct": -0.29,
+        "up": 9,
+        "down": 14,
+        "note": "[[日東紡績]]主導・AI周辺の利益確定"
+      },
+      {
+        "sector": "小売業",
+        "w_pct": -2.39,
+        "median_pct": -1.83,
+        "up": 12,
+        "down": 107,
+        "note": "内需（下げ銘柄数 最多）"
+      },
+      {
+        "sector": "不動産業",
+        "w_pct": -2.28,
+        "median_pct": -1.2,
+        "up": 12,
+        "down": 45,
+        "note": "金利敏感（割引率・調達コスト上昇）"
+      },
+      {
+        "sector": "陸運業",
+        "w_pct": -1.98,
+        "median_pct": -1.75,
+        "up": 2,
+        "down": 31,
+        "note": "高配当・金利敏感"
+      },
+      {
+        "sector": "食料品",
+        "w_pct": 0.23,
+        "median_pct": -1.51,
+        "up": 7,
+        "down": 42,
+        "note": "ディフェンシブ（値下がり42銘柄・中央値−1.51%。加重は大型株で小幅プラス）"
+      },
+      {
+        "sector": "医薬品",
+        "w_pct": -1.34,
+        "median_pct": -0.94,
+        "up": 10,
+        "down": 33,
+        "note": "ディフェンシブ"
+      }
+    ],
+    "themes": [
+      {
+        "title": "① 金利上昇ローテーション（内需・ディフェンシブ・金利敏感の広範な売り）",
+        "bullets": [
+          "対象 ▶ 小売・不動産・陸運・食料品・医薬品。いずれも**銘柄数の広がりを伴って明確に売却**。",
+          "長期金利上昇局面で**高配当・ディフェンシブ・金利敏感（割引率上昇に弱い）**からの資金流出という共通項（[野村ウェルスタイル](https://www.nomura.co.jp/wealthstyle/article/0684/)）。",
+          "※小売はバローホールディングスの公募増資（「注目個別銘柄」参照）等の個別材料も重なるが、値下がり107と業種横断の流出が明確。"
+        ]
+      },
+      {
+        "title": "② AI周辺「勝ち組素材」からの利益確定（非鉄金属・ガラス土石）",
+        "bullets": [
+          "非鉄金属 ▶ **[[古河電気工業]] −8.01%（1,245億円）**／ガラス土石 ▶ **[[日東紡績]] −8.46%** が牽引。",
+          "いずれもデータセンター/AI向け（電線・光関連、半導体パッケージ基板向けスペシャルガラス）で**大きく買われてきた銘柄**の決算後バリュエーション調整。",
+          "**半導体本体への資金集中の裏で、周辺・素材の勝ち組から利確**が出た「AIテーマ内のローテーション」（[日経・古河電気工業](https://www.nikkei.com/nkd/company/?scode=5801)、[みんかぶ・日東紡績](https://minkabu.jp/stock/3110)）。"
+        ]
+      },
+      {
+        "title": "③ 防衛・重工の調整（輸送用機器 ⚠）",
+        "bullets": [
+          "自動車株全般は底堅い（中央値+0.35%）。下げは**[[川崎重工業]] −7.66%（1,235億円）**主導。",
+          "防衛重工3社（[[三菱重工業]]・[[川崎重工業]]・[[IHI]]）は3月高値から**いずれも2割超下落** → 過熱バリュエーションの調整継続（[マネクリ/マネックス証券](https://media.monex.co.jp/articles/-/29486)）。"
+        ]
+      },
+      {
+        "title": "（参考）海運業",
+        "bullets": [
+          "シクリカルの調整。値上2/値下4と薄商いで指数の振れが大きい点は留意。"
+        ]
+      }
+    ]
+  },
+  "movers": {
+    "gainers": [
+      {
+        "code": "6976",
+        "name": "太陽誘電",
+        "pct": 12.43,
+        "close": 22655.0,
+        "turnover_oku": 6399.8,
+        "sector33": "電気機器",
+        "note": "**AIサーバー向けMLCC需要急増**で「電子部品株」→「AIインフラ株」へ再評価。FY26/3は営業益+91%・純益約5倍、FY27/3のAIサーバー向けMLCC売上+80%見通し。**上場来高値**を更新。",
+        "links": [
+          {
+            "label": "日経",
+            "url": "https://www.nikkei.com/article/DGXZQOFL011BS0R00C26A7000000/"
+          },
+          {
+            "label": "マネーポスト",
+            "url": "https://finance.yahoo.co.jp/news/detail/33350b69a9e535e7bd842f4d0b8da2df30dd81af"
+          }
+        ],
+        "emph": true
+      },
+      {
+        "code": "3436",
+        "name": "SUMCO",
+        "pct": 17.37,
+        "close": 4729.0,
+        "turnover_oku": 1322.4,
+        "sector33": "金属製品",
+        "note": "シリコンウエハー。**半導体メモリ需要回復**期待とAIテーマ。証券会社の強気見通し（投資判断・目標株価引き上げ報道）も追い風。",
+        "links": [
+          {
+            "label": "第一生命",
+            "url": "https://www.dlri.co.jp/report/macro/598258.html"
+          }
+        ],
+        "emph": true
+      },
+      {
+        "code": "4062",
+        "name": "イビデン",
+        "pct": 8.27,
+        "close": 25785.0,
+        "turnover_oku": 3053.2,
+        "sector33": "電気機器",
+        "note": "AI/データセンター向け半導体パッケージ基板（ICパッケージ）需要期待。",
+        "links": []
+      },
+      {
+        "code": "7735",
+        "name": "SCREENホールディングス",
+        "pct": 9.46,
+        "close": 19490.0,
+        "turnover_oku": 1126.3,
+        "sector33": "電気機器",
+        "note": "半導体製造装置（洗浄）。米ハイテク高・SOX指数連動。",
+        "links": []
+      },
+      {
+        "code": "6590",
+        "name": "芝浦メカトロニクス",
+        "pct": 15.15,
+        "close": 5320.0,
+        "turnover_oku": 139.8,
+        "sector33": "電気機器",
+        "note": "半導体製造装置。中小型の装置株物色。",
+        "links": []
+      },
+      {
+        "code": "6996",
+        "name": "ニチコン",
+        "pct": 14.94,
+        "close": 4770.0,
+        "turnover_oku": 91.7,
+        "sector33": "電気機器",
+        "note": "コンデンサ／EV急速充電。電子部品テーマ。",
+        "links": []
+      },
+      {
+        "code": "429A",
+        "name": "テクセンドフォトマスク",
+        "pct": 9.58,
+        "close": 4745.0,
+        "turnover_oku": 77.1,
+        "sector33": "その他製品",
+        "note": "フォトマスク（半導体前工程材料）。",
+        "links": []
+      },
+      {
+        "code": "3445",
+        "name": "RS Technologies",
+        "pct": 10.3,
+        "close": 8030.0,
+        "turnover_oku": 24.6,
+        "sector33": "金属製品",
+        "note": "再生ウエハー等。ウエハーテーマ連動。",
+        "links": []
+      },
+      {
+        "code": "5942",
+        "name": "日本フイルコン",
+        "pct": 16.26,
+        "close": 715.0,
+        "turnover_oku": 5.6,
+        "sector33": "金属製品",
+        "note": "**当日開示の2Q決算**（26/11期）で**営業益+195.4%**の大幅増益（売上143.6億円／営業益8.3億円）。J-Quants fins/summaryで確認。",
+        "links": [
+          {
+            "label": "株探",
+            "url": "https://kabutan.jp/stock/finance?code=5942"
+          }
+        ],
+        "emph": true
+      }
+    ],
+    "gainers_footnote": "値上がり率No.1は[[Def consulting]]（4833・+54.05%）等の**小型グロース**だがテーマ性は薄く需給色が濃い。**相場の中心は半導体・電子部品の大型〜中型株**（[[太陽誘電]]・[[SUMCO]]・[[イビデン]]・[[SCREEN]]で売買代金の大半）。",
+    "losers": [
+      {
+        "code": "9956",
+        "name": "バローホールディングス",
+        "pct": -13.99,
+        "close": 3350.0,
+        "turnover_oku": 49.3,
+        "sector33": "小売業",
+        "note": "FY26/3は31期連続増収・過去最高益だが、**最大180億円の公募増資を発表 → 希薄化嫌気**で急落。",
+        "links": [
+          {
+            "label": "みんかぶ",
+            "url": "https://minkabu.jp/stock/9956"
+          }
+        ],
+        "emph": true
+      },
+      {
+        "code": "5801",
+        "name": "古河電気工業",
+        "pct": -8.01,
+        "close": 4351.0,
+        "turnover_oku": 1245.1,
+        "sector33": "非鉄金属",
+        "note": "データセンター/自動車向けで最高益も、**買われ過ぎ後の利益確定売り**。非鉄金属セクター最弱の主因。",
+        "links": [
+          {
+            "label": "日経",
+            "url": "https://www.nikkei.com/nkd/company/?scode=5801"
+          }
+        ],
+        "emph": true
+      },
+      {
+        "code": "7012",
+        "name": "川崎重工業",
+        "pct": -7.66,
+        "close": 2698.5,
+        "turnover_oku": 1234.9,
+        "sector33": "輸送用機器",
+        "note": "防衛・重工の**バリュエーション調整**（重工3社とも3月高値から2割超）。",
+        "links": [
+          {
+            "label": "マネクリ",
+            "url": "https://media.monex.co.jp/articles/-/29486"
+          }
+        ],
+        "emph": true
+      },
+      {
+        "code": "3110",
+        "name": "日東紡績",
+        "pct": -8.46,
+        "close": 3950.0,
+        "turnover_oku": 328.4,
+        "sector33": "ガラス･土石製品",
+        "note": "AI向けスペシャルガラス（半導体基板）で買われた後の**決算後調整**継続（米系証券が目標株価引き下げ）。",
+        "links": [
+          {
+            "label": "みんかぶ",
+            "url": "https://minkabu.jp/stock/3110"
+          }
+        ]
+      },
+      {
+        "code": "3086",
+        "name": "J.フロント リテイリング",
+        "pct": -7.6,
+        "close": 3342.0,
+        "turnover_oku": 229.9,
+        "sector33": "小売業",
+        "note": "百貨店・内需。小売セクターの広範な売りの一角。",
+        "links": []
+      },
+      {
+        "code": "2585",
+        "name": "ライフドリンク カンパニー",
+        "pct": -9.78,
+        "close": 1486.0,
+        "turnover_oku": 18.4,
+        "sector33": "食料品",
+        "note": "飲料・食料品。ディフェンシブ売り。",
+        "links": []
+      },
+      {
+        "code": "2501",
+        "name": "サッポロビール",
+        "pct": -7.78,
+        "close": 1872.0,
+        "turnover_oku": 30.2,
+        "sector33": "食料品",
+        "note": "食料品ディフェンシブ売り。",
+        "links": []
+      },
+      {
+        "code": "9072",
+        "name": "ニッコンホールディングス",
+        "pct": -7.05,
+        "close": 5482.0,
+        "turnover_oku": 33.4,
+        "sector33": "陸運業",
+        "note": "陸運。高配当・金利敏感ディフェンシブの売り。",
+        "links": []
+      }
+    ],
+    "losers_footnote": "当日にJ-Quants fins/summaryで決算開示があったのは**15件のみ**（大半が小型株）。**主要な値動きの多くは決算ではなく、テーマ・地合い・需給（公募増資・利益確定・金利ローテーション）で説明される**。"
+  },
+  "theme_matrix": {
+    "rows": [
+      {
+        "theme": "半導体・電子部品",
+        "bought": "MLCC=**太陽誘電**／ウエハー=**SUMCO**／基板=**イビデン**／装置=**SCREEN**・**芝浦メカトロニクス**",
+        "sold": "AI周辺の勝ち組素材＝非鉄金属(**古河電気工業**)・ガラス土石(**日東紡績**)の利益確定"
+      },
+      {
+        "theme": "金利敏感",
+        "bought": "銀行・証券（利ざや拡大メリット）",
+        "sold": "不動産・陸運（割引率・調達コスト上昇）"
+      },
+      {
+        "theme": "ディフェンシブ/内需",
+        "bought": "—",
+        "sold": "小売・食料品・医薬品"
+      },
+      {
+        "theme": "その他",
+        "bought": "—",
+        "sold": "防衛重工（**川崎重工業**）の過熱調整"
+      }
+    ],
+    "character": "指数（TOPIX +0.42%）は小幅高だが値下がり銘柄数が上回る**「一部大型株だけの上昇＝逆行相場」**。前日米ハイテク高を好感した寄り天（一時+1,900円）後の失速と、**約29年ぶり高水準の長期金利**を軸とするセクターローテーションが本質。"
+  },
+  "methodology": {
+    "lines": [
+      "**データ** ▶ [J-Quants API V2](https://jpx-jquants.com/)（Lightプラン）。エンドポイント= /equities/bars/daily（四本値）／/equities/master（業種・区分）／/indices/bars/daily/topix（TOPIX）／/fins/summary（当日決算開示）。取得・集計は test-jquants の sector_analysis.py。",
+      "**対象** ▶ 東証プライム/スタンダード/グロースの内国普通株（ProdCat=011・Mkt∈{0111,0112,0113}・コード末尾0）。",
+      "**流動性フィルタ** ▶ 当日売買代金1億円以上（薄商いの小型・低位株による騰落率上位の歪みを排除）＝ 1,502銘柄。",
+      "**騰落率** ▶ 調整済み終値(AdjC)ベースの前日比。セクター代表値は**売買代金加重平均**を主に、単純平均・中央値・騰落銘柄数を併記。"
+    ]
+  },
+  "news_sources": [
+    {
+      "topic": "市場概況",
+      "links": [
+        {
+          "label": "株探（後場概況 07-01）",
+          "url": "https://s.kabutan.jp/news/n202607010670/"
+        },
+        {
+          "label": "日経（前場 続伸）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL010KB0R00C26A7000000/"
+        }
+      ]
+    },
+    {
+      "topic": "太陽誘電",
+      "links": [
+        {
+          "label": "日経（上場来高値・AI電子部品）",
+          "url": "https://www.nikkei.com/article/DGXZQOFL011BS0R00C26A7000000/"
+        },
+        {
+          "label": "マネーポストWEB",
+          "url": "https://finance.yahoo.co.jp/news/detail/33350b69a9e535e7bd842f4d0b8da2df30dd81af"
+        }
+      ]
+    },
+    {
+      "topic": "SUMCO/半導体",
+      "links": [
+        {
+          "label": "第一生命経済研究所",
+          "url": "https://www.dlri.co.jp/report/macro/598258.html"
+        },
+        {
+          "label": "SBI証券",
+          "url": "https://go.sbisec.co.jp/media/report/dom_senryaku/dom_senryaku_260522.html"
+        }
+      ]
+    },
+    {
+      "topic": "金利・銀行・不動産",
+      "links": [
+        {
+          "label": "三井住友DSアセット",
+          "url": "https://www.smd-am.co.jp/market/macroview/2026/mvreport20260518/"
+        },
+        {
+          "label": "野村ウェルスタイル",
+          "url": "https://www.nomura.co.jp/wealthstyle/article/0684/"
+        }
+      ]
+    },
+    {
+      "topic": "防衛重工",
+      "links": [
+        {
+          "label": "マネクリ/マネックス証券",
+          "url": "https://media.monex.co.jp/articles/-/29486"
+        }
+      ]
+    },
+    {
+      "topic": "個別（バロー/古河/日東紡/フイルコン）",
+      "links": [
+        {
+          "label": "みんかぶ 9956",
+          "url": "https://minkabu.jp/stock/9956"
+        },
+        {
+          "label": "日経 5801",
+          "url": "https://www.nikkei.com/nkd/company/?scode=5801"
+        },
+        {
+          "label": "みんかぶ 3110",
+          "url": "https://minkabu.jp/stock/3110"
+        },
+        {
+          "label": "株探 5942",
+          "url": "https://kabutan.jp/stock/finance?code=5942"
+        }
+      ]
+    }
+  ],
+  "sources_accessed": "2026-07-02",
+  "disclaimer": [
+    "本レポートは J-Quants API のデータと公開情報に基づく市場分析であり、**投資勧誘・投資助言を目的としたものではありません**。",
+    "個別銘柄の騰落要因のうち、決算・開示以外（テーマ・需給・地合い）に帰属する部分は報道・状況からの**推定**を含みます。",
+    "売買代金1億円未満の薄商い銘柄は分析対象外です。数値は取得時点のデータに基づき、事後修正・再集計により変動する可能性があります。"
+  ]
+}
